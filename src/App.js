@@ -1,13 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { Component } from 'react';
+import Home from './pages/Home';
+import RoadToElite from './pages/RoadToElite';
+import GameMode from './pages/GameMode';
+import MyElite from './pages/MyElite';
+import Settings from './pages/Settings';
+import {Route, Routes} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>prova</h1>
-      </header>
-    </div>
+    <>
+      <div>
+
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/RoadToElite" element={<RoadToElite />} /> 
+          <Route path="/GameMode" element={<GameMode />} /> 
+          <Route path="/MyElite" element={<MyElite />} /> 
+          <Route path="/Settings" element={<Settings />} /> 
+        </Routes>
+
+      </div>
+    </>
   );
 }
 

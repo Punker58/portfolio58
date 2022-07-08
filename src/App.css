@@ -1,1 +1,59 @@
+/* FONT - LEAGUE SPARTAN */
+@font-face {
+    font-family: Rintix;
+    src: url('font/Rintix.ttf');
+}
+
+*{  
+    /* COLORI */
+    --main-color: #282c34;
+    --text-color: #FFFFFF;
+    --second-color: #BD4856;
+    --third-color: #5A7185;
+
+    /* COLORE BACKGROUND E TESTO*/
+    background-color: var(--main-color) !important;
+    color:var(--text-color) !important;
+
+    font-family: Rintix;
+
+}
+
+.drawer {
+    margin-top:10rem !important;
+}
+
+.drawer a {
+    display:block;
+    font-size: 5rem !important;
+    text-shadow: 0.6rem 0.2rem var(--third-color) !important;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    text-decoration: none !important;
+}
+
+.drawer a:nth-child(2) {
+    margin-left:2rem !important;
+}
+
+.drawer a:nth-child(3) {
+    margin-left:2.5rem !important;
+}
+
+.drawer a:nth-child(4) {
+    margin-left:2rem !important;
+}
+
+.drawer a:hover {
+    color: var(--second-color) !important;
+    cursor: pointer;
+    transform : scale(1.25);
+    -moz-transform : scale(1.25);
+    -webkit-transform : scale(1.25);
+    -o-transform : scale(1.25);
+    -ms-transform : scale(1.25);
+}
 
