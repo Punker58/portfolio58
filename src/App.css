@@ -1,8 +1,7 @@
-/* FONT - LEAGUE SPARTAN */
-@font-face {
-    font-family: Rintix;
-    src: url('font/Rintix.ttf');
-}
+/* FONT - RINTIX / LEAGUE SPARTAN */
+@font-face {font-family: Rintix; src: url('font/Rintix.ttf');}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 *{  
     /* COLORI */
@@ -11,49 +10,77 @@
     --second-color: #BD4856;
     --third-color: #5A7185;
 
-    /* COLORE BACKGROUND E TESTO*/
-    background-color: var(--main-color) !important;
+    /* COLORE TESTO*/
     color:var(--text-color) !important;
 
+    /* FONT DEFAULT*/
     font-family: Rintix;
 
 }
 
-.drawer {
-    margin-top:10rem !important;
+/* SEZIONI */
+.home {
+    background-color: var(--main-color) !important;
+    height:100vh;
 }
 
-.drawer a {
-    display:block;
-    font-size: 5rem !important;
-    text-shadow: 0.6rem 0.2rem var(--third-color) !important;
-    transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    text-decoration: none !important;
+.projects {
+    background-color: var(--text-color) !important;
+    height:100vh;
 }
 
-.drawer a:nth-child(2) {
-    margin-left:2rem !important;
+
+.navbar-nav {
+    margin-top:2.5vh !important;
+    margin-right:5vh !important;
 }
 
-.drawer a:nth-child(3) {
-    margin-left:2.5rem !important;
+.slogan {
+    margin-top: 15rem !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    font-family: 'Merriweather', serif !important;
+    background-color: var(--second-color) !important;
+    border-radius: 2vh;
+    text-align: center;
 }
 
-.drawer a:nth-child(4) {
-    margin-left:2rem !important;
+.social {
+    margin-top: 8vh !important;
 }
 
-.drawer a:hover {
-    color: var(--second-color) !important;
-    cursor: pointer;
-    transform : scale(1.25);
-    -moz-transform : scale(1.25);
-    -webkit-transform : scale(1.25);
-    -o-transform : scale(1.25);
-    -ms-transform : scale(1.25);
+.social a{
+    display: block;
+    margin-top: 2vh !important;
 }
 
+.projects h1 {
+    color: var(--main-color) !important;
+    margin-top: 5vh;
+    font-size: 8vh;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+}

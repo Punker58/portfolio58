@@ -1,24 +1,46 @@
 
 import React, { Component } from 'react';
-import Home from './pages/Home';
-import RoadToElite from './pages/RoadToElite';
-import GameMode from './pages/GameMode';
-import MyElite from './pages/MyElite';
-import Settings from './pages/Settings';
-import {Route, Routes} from "react-router-dom"
+import Navbar from './components/Navbar';
+import Slogan from './components/Slogan';
+import Social from './components/Social';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <>
       <div>
 
-        <Routes>
-          <Route path="/" element={<Home />} /> 
-          <Route path="/RoadToElite" element={<RoadToElite />} /> 
-          <Route path="/GameMode" element={<GameMode />} /> 
-          <Route path="/MyElite" element={<MyElite />} /> 
-          <Route path="/Settings" element={<Settings />} /> 
-        </Routes>
+        <section className='home'>
+          <div className='container'>
+            <div className='row'>
+
+              <div className='col-12'>
+                <Navbar/>
+              </div>
+
+              <div className='col-8'>
+                <Slogan/>
+              </div>
+
+              <div className='col-4'>
+                <Social/>
+              </div>
+
+            </div>
+
+          </div>
+          
+        </section>
+
+        <section className='projects'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12'>
+                <Projects/>
+              </div>
+            </div>
+          </div>
+        </section>
 
       </div>
     </>
