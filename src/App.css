@@ -26,9 +26,12 @@
 
 .projects {
     background-color: var(--text-color) !important;
-    height:100vh;
 }
 
+.skills {
+    background-color: var(--main-color) !important;
+
+}
 
 .navbar-nav {
     margin-top:2.5vh !important;
@@ -54,11 +57,31 @@
     margin-top: 2vh !important;
 }
 
+
+/** SEZIONE PROGETTI **/
 .projects h1 {
     color: var(--main-color) !important;
+    text-align: right !important;
     margin-top: 5vh;
     font-size: 8vh;
 }
+
+/* MONACI DOMENICO LAB*/
+
+.txt1 {
+    color: var(--main-color) !important;
+    font-style: italic;
+}
+
+/** SEZIONE SKILLS **/
+
+.skills h1 {
+    color: var(--text-color) !important;
+    text-align: left !important;
+    margin-top: 5vh;
+    font-size: 8vh;
+}
+
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
