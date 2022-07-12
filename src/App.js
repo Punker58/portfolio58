@@ -5,6 +5,8 @@ import Slogan from './components/Slogan';
 import Social from './components/Social';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -53,7 +55,20 @@ function App() {
               </div>
             </div>
           </div>
-        </section>        
+        </section>       
+
+        <section className='about'>
+          <div className='container'>
+            <div className='row'>
+            <h1 className="fst-italic">about me</h1>
+              <div className='col-12 mt-5'>
+                <About/>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+        <Footer/>      
 
       </div>
     </>
