@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 *{  
+
     /* COLORI */
     --main-color: #282c34;
     --text-color: #FFFFFF;
     --second-color: #BD4856;
-    --third-color: #5A7185;
+    --third-color: #141214;
 
     /* COLORE TESTO*/
     color:var(--text-color) !important;
@@ -32,6 +33,12 @@
     background-color: var(--main-color) !important;
 
 }
+
+.about {
+    background-color: var(--text-color) !important;
+}
+
+/** NAVBAR **/
 
 .navbar-nav {
     margin-top:2.5vh !important;
@@ -66,12 +73,11 @@
     font-size: 8vh;
 }
 
-/* MONACI DOMENICO LAB*/
-
 .txt1 {
     color: var(--main-color) !important;
     font-style: italic;
 }
+
 
 /** SEZIONE SKILLS **/
 
@@ -81,6 +87,77 @@
     margin-top: 5vh;
     font-size: 8vh;
 }
+
+.skills2 h3 {
+    font-style: italic !important;
+}
+
+.skills2 li {
+    list-style-type: none; 
+    margin-bottom:1rem !important;
+}
+
+.bar{
+    background: var(--second-color) !important;
+    display: block;
+    height: 8px;
+    width:350px;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--second-color) !important;
+}
+
+.bar span{
+    height: 8px;
+    float: left;
+    background: var(--text-color) !important;				
+}
+
+.velocita{
+    width:90%;
+    animation: velocita 4s;
+}
+
+@keyframes velocita {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/** SEZIONE ABOUT ME **/
+.about h1 {
+    color: var(--main-color) !important;
+    text-align: right !important;
+    margin-top: 5vh;
+    font-size: 8vh;
+}
+
+.about p {
+    font-weight: 400 !important;
+    font-style: italic;
+    font-family: 'Merriweather', serif !important;
+    background-color: var(--second-color) !important;
+    border-radius: 2vh;
+    text-align: center;
+    padding: 2rem !important;
+}
+
+/** FOOTER **/
+
+footer {
+    background-color: var(--third-color)!important;
+}
+
+footer p{
+    font-family: 'Merriweather', serif !important;
+}
+
+
+
 
 
 /* For extremely small screen devices (595px and below) */
