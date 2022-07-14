@@ -1,4 +1,4 @@
-
+//IMPORT
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import Slogan from './components/Slogan';
@@ -7,6 +7,12 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import About from './components/About';
 import Footer from './components/Footer';
+
+// AOS ANIMATION
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({});
+
 
 function App() {
   return (
@@ -21,7 +27,7 @@ function App() {
                 <Navbar/>
               </div>
 
-              <div className='col-8'>
+              <div className='col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8'>
                 <Slogan/>
               </div>
 

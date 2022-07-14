@@ -38,6 +38,11 @@
     background-color: var(--text-color) !important;
 }
 
+.fixaos {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 /** NAVBAR **/
 
 .navbar-nav {
@@ -88,8 +93,10 @@
     font-size: 8vh;
 }
 
-.skills2 h3 {
+.skills2>li>h3>img {
     font-style: italic !important;
+    width:5rem;
+    height:5rem;
 }
 
 .skills2 li {
@@ -112,20 +119,6 @@
     height: 8px;
     float: left;
     background: var(--text-color) !important;				
-}
-
-.velocita{
-    width:90%;
-    animation: velocita 4s;
-}
-
-@keyframes velocita {
-    0% {
-        width:0%;
-    }
-    100%{
-        width: 90%;
-    }
 }
 
 /** SEZIONE ABOUT ME **/
@@ -157,12 +150,37 @@ footer p{
 }
 
 
+/*** ANIMAZIONI ***/
+
+
+/** SEZIONE PROJECT **/
+
+
+/** SEZIONE SKILLS **/
+
+.shtml{
+    width: 100%;
+    animation: shtml 4s;
+}
+
+@keyframes shtml {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 
 
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
 
+    .social {
+        display:none !important;
+    }
 }
 
 /* Small screen devices (600px and above) */
@@ -182,5 +200,6 @@ footer p{
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
+
 
 }
