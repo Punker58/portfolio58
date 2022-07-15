@@ -11,7 +11,10 @@ import Footer from './components/Footer';
 // AOS ANIMATION
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init({});
+AOS.init({
+  duration:3000,
+  once:true
+});
 
 
 function App() {
@@ -41,7 +44,7 @@ function App() {
           
         </section>
 
-        <section className='projects'>
+        <section id="projects" className='projects'>
           <div className='container'>
             <div className='row'>
             <h1 className="fst-italic">projects</h1>
@@ -52,7 +55,7 @@ function App() {
           </div>
         </section>
         
-        <section className='skills'>
+        <section id="skills" className='skills'>
           <div className='container'>
             <div className='row'>
             <h1 className="fst-italic">Skills</h1>
@@ -63,7 +66,7 @@ function App() {
           </div>
         </section>       
 
-        <section className='about'>
+        <section id="about" className='about'>
           <div className='container'>
             <div className='row'>
             <h1 className="fst-italic">about me</h1>

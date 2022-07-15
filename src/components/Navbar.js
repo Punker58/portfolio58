@@ -13,13 +13,13 @@ function Navbar() {
                         <a className="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Projects</a>
+                        <a className="nav-link" href="#projects">Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Skills</a>
+                        <a className="nav-link" href="#skills">Skills</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link ">About me</a>
+                        <a className="nav-link" href="#about">About me</a>
                     </li>
                 </ul>
                 </div>
