@@ -11,72 +11,79 @@ import mysqlpic from '../img/mysql.png';
 import ps from '../img/ps.png';
 import gitpic from '../img/git.png';
 
-
 function Skills() {
+
+    //array progetti
+    let elements = [
+        {img: html5, class:'shtml'},
+        {img: css, class:'shtml'},
+        {img: jspic, class:'sjs'},
+        {img: jquery, class:'sjs'},
+        {img: bt5, class:'shtml'},
+        {img: tailpic, class:'sjs'},
+        {img: reactpic, class:'sreactpic'},
+        {img: npmpic, class:'shtml'},
+        {img: phppic, class:'shtml'},
+        {img: mysqlpic, class:'shtml'},
+        {img: ps, class:'sreactpic'},
+        {img: gitpic, class:'shtml'}		
+    ];
+
     return (
         <>
 
             <div className="row mb-5">
 
-                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
                     <div class="skills2">
-                        <li>
-                            <h3><img src={html5} /></h3><span class="bar"><span class="shtml"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={css} /></h3><span class="bar"><span class="scss"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={jspic} /></h3><span class="bar"><span class="sjs"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={jquery} /></h3><span class="bar"><span class="sjquery"></span></span>
-                        </li>
-                    </div>
-                </div>
 
-                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                    <div class="skills2">
-                        <li>
-                            <h3><img src={bt5} /></h3><span class="bar"><span class="velocita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={tailpic} /></h3><span class="bar"><span class="creativita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={reactpic} /></h3><span class="bar"><span class="affidabilita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={npmpic} /></h3><span class="bar"><span class="conoscenza"></span></span>
-                        </li>
-                    </div>
-                </div>
+                        {elements.map(function(value, index){
 
-                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="skills2">
-                        <li>
-                            <h3><img src={phppic} /></h3><span class="bar"><span class="velocita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={mysqlpic} /></h3><span class="bar"><span class="creativita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={ps} /></h3><span class="bar"><span class="affidabilita"></span></span>
-                        </li>
-                        
-                        <li>
-                            <h3><img src={gitpic} /></h3><span class="bar"><span class="conoscenza"></span></span>
-                        </li>
+                            return (index <= 3)?
+                                    <li>
+                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                    </li>
+                                :null
+
+                        })}
+
+
                     </div>
-                </div>
+                </div>   
+
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
+                    <div class="skills2">
+
+                        {elements.map(function(value, index){
+
+                            return (index > 3 && index <= 7)?
+                                    <li>
+                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                    </li>
+                                :null
+
+                        })}
+
+
+                    </div>
+                </div>  
+
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
+                    <div class="skills2">
+
+                        {elements.map(function(value, index){
+
+                            return (index > 7 && index < 12)?
+                                    <li>
+                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                    </li>
+                                :null
+
+                        })}
+
+
+                    </div>
+                </div>                
 
             </div>
 

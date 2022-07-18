@@ -167,6 +167,8 @@ footer p{
 
 /** SEZIONE SKILLS **/
 
+
+/* HTML */
 .shtml{
     width: 100%;
     animation: shtml 4s;
@@ -178,6 +180,36 @@ footer p{
     }
     100%{
         width: 100%;
+    }
+}
+
+/* CSS */
+.sjs {
+    width: 70%;
+    animation: sjs 4s;
+}
+
+@keyframes sjs {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+/* REACT*/
+.sreactpic {
+    width: 50%;
+    animation: sreactpic 4s;
+}
+
+@keyframes sreactpic {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 50%;
     }
 }
 
