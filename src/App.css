@@ -50,10 +50,6 @@
     margin-right:5vh !important;
 }
 
-.nav-link:hover {
-    color: var(--second-color) !important;
-}
-
 .slogan {
     margin-top: 15rem !important;
     font-weight: 400 !important;
@@ -73,6 +69,13 @@
     margin-top: 2vh !important;
 }
 
+/** SOCIAL **/
+
+.social>a>img {
+    width: 3rem;
+    height: 3rem;
+}
+
 
 /** SEZIONE PROGETTI **/
 .projects h1 {
@@ -90,7 +93,6 @@
 figure:nth-child(2), figure:nth-child(4) {
     float:right !important;
 }
-
 
 
 /** SEZIONE SKILLS **/
@@ -160,6 +162,12 @@ footer p{
 
 
 /*** ANIMAZIONI ***/
+
+/** SEZIONE NAVBAR **/
+.nav-link:hover {
+    text-decoration: underline solid var(--second-color) 20% !important ;
+}
+
 
 
 /** SEZIONE PROJECT **/
