@@ -50,16 +50,21 @@
     margin-right:5vh !important;
 }
 
+/** SLOGAN **/
 .slogan {
     margin-top: 15rem !important;
     font-weight: 400 !important;
     font-style: italic;
     font-family: 'Merriweather', serif !important;
-    background-color: var(--second-color) !important;
     border-radius: 2vh;
     text-align: center;
 }
 
+.sloganpunk {
+    color: var(--second-color) !important;
+}
+
+/** SOCIAL **/
 .social {
     margin-top: 8vh !important;
 }
@@ -69,13 +74,11 @@
     margin-top: 2vh !important;
 }
 
-/** SOCIAL **/
-
 .social>a>img {
     width: 3rem;
     height: 3rem;
+    transition: transform .2s;
 }
-
 
 /** SEZIONE PROGETTI **/
 .projects h1 {
@@ -90,10 +93,14 @@
     font-style: italic;
 }
 
+figure>img {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
 figure:nth-child(2), figure:nth-child(4) {
     float:right !important;
 }
-
 
 /** SEZIONE SKILLS **/
 
@@ -160,6 +167,30 @@ footer p{
     font-family: 'Merriweather', serif !important;
 }
 
+/** DIVIDER **/
+.custom-shape-divider-top-1658328146 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1658328146 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 89px;
+}
+
+.custom-shape-divider-top-1658328146 .shape-fill {
+    fill: var(--text-color) !important;
+}
+
+.divider-58 {
+    fill: var(--main-color) !important;
+}
+
 
 /*** ANIMAZIONI ***/
 
@@ -168,12 +199,100 @@ footer p{
     text-decoration: underline solid var(--second-color) 20% !important ;
 }
 
+/** SEZIONE SOCIAL **/
+.social>a>img:hover {
+    transform: scale(1.2);
+}
 
+/** SEZIONE SLOGAN **/
+.text-slogan {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -150deg,
+      var(--main-color) 0%,
+      var(--main-color)29%,
+      var(--second-color) 67%,
+      var(--second-color) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+}
 
 /** SEZIONE PROJECT **/
+figure>img:hover {
+    transform: scale(1.1);
+}
 
+.projects>.container>.row>h1 {
+    text-transform: uppercase; 
+    background-image: linear-gradient(
+      -225deg,
+      var(--main-color) 0%,
+      var(--main-color)29%,
+      var(--text-color) 67%,
+      var(--main-color) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
 
 /** SEZIONE SKILLS **/
+
+.skills>.container>.row>h1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      var(--main-color) 0%,
+      var(--text-color)29%,
+      var(--main-color) 67%,
+      var(--text-color) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+/** SEZIONE ABOUT **/
+.about>.container>.row>h1 {
+    text-transform: uppercase; 
+    background-image: linear-gradient(
+      -225deg,
+      var(--main-color) 0%,
+      var(--main-color)29%,
+      var(--text-color) 67%,
+      var(--main-color) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
 
 
 /* HTML */
@@ -220,9 +339,6 @@ footer p{
         width: 50%;
     }
 }
-
-
-
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {

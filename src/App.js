@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-  duration:3000,
   once:true
 });
 
@@ -44,6 +43,13 @@ function App() {
           
         </section>
 
+        {/* DIVIDER */}
+        <div class="divider-58">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>  
+
         <section id="projects" className='projects'>
           <div className='container'>
             <div className='row'>
@@ -54,8 +60,16 @@ function App() {
             </div>
           </div>
         </section>
-        
+
         <section id="skills" className='skills'>
+
+          {/* DIVIDER */}
+          <div class="custom-shape-divider-top-1658328146">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+              </svg>
+          </div>  
+
           <div className='container'>
             <div className='row'>
             <h1 className="fst-italic">Skills</h1>
@@ -64,7 +78,14 @@ function App() {
               </div>
             </div>
           </div>
-        </section>       
+        </section>  
+
+        {/* DIVIDER */}
+        <div class="divider-58">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>       
 
         <section id="about" className='about'>
           <div className='container'>
