@@ -7,10 +7,10 @@ function  Projects() {
 
     //array progetti
     let elements = [
-        {name:'monaci domenico.lab', aos:'fade-right', img:pmonaci},
-        {name:'magliozzi group', aos:'fade-left', img:pmagliozzi },
-        {name:'wearedifferent - boutique', aos:'fade-right', img:pfreestyle},
-        {name:'freestyle concept store', aos:'fade-left', img:pdifferent}
+        {aos:'fade-right', img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
+        {aos:'fade-left', img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
+        {aos:'fade-right', img:pfreestyle, url:'https://www.freestyleconceptstore.it/'},
+        {aos:'fade-left', img:pdifferent, url:'https://www.wearedifferentboutique.it/'}
     ];
 
     return(
@@ -19,9 +19,10 @@ function  Projects() {
 
             {elements.map(function(value, index){
                 
-                return <figure id="figure" class="figure mt-5 mb-5" data-aos={value.aos} data-aos-duration="1000">
-                        <img src={value.img} class="figure-img img-fluid rounded" alt="..."/>
-                    </figure>
+                return <a className="p1" href={value.url}><figure id="figure" className="figure mt-5 mb-5" data-aos={value.aos} data-aos-duration="1000">
+                                <img src={value.img} className="figure-img img-fluid rounded" alt="..."/>
+                            </figure>
+                        </a>
             })}
 
         </>
