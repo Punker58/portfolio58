@@ -62,8 +62,21 @@ ul {
     font-style: italic;
     font-family: 'Merriweather', serif !important;
     border-radius: 2vh;
-    text-align: center;
 }
+
+.slogan2 {
+    font-style: italic;
+    color: var(--second-color) !important;
+}
+
+.btn-outline-danger {
+    border: 2px solid var(--second-color) !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--second-color) !important;
+}
+
 
 .sloganpunk {
     color: var(--second-color) !important;
@@ -79,10 +92,13 @@ ul {
     margin-top: 2vh !important;
 }
 
-.social>a>img {
-    width: 4rem;
-    height: 4rem;
+.social>a>svg {
+    font-size: 3rem;
     transition: transform .2s;
+}
+
+.social>a>svg:hover {
+    transform: scale(1.2);
 }
 
 /** SEZIONE PROGETTI **/
@@ -183,9 +199,15 @@ footer p{
     margin: 0 auto;
 }
 
-.pfooter>a>img {
+.pfooter>a>svg {
     margin: 0 2rem 0 0;
-    width:2.5rem;
+    width:3rem;
+    font-size: 3rem;
+    transition: transform .2s;
+}
+
+.pfooter>a>svg:hover {
+    transform: scale(1.2);
 }
 
 /** DIVIDER **/

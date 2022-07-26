@@ -35,13 +35,13 @@ function Skills() {
             <div className="row mb-5">
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
-                    <div class="skills2">
+                    <div className="skills2">
 
                         {elements.map(function(value, index){
 
                             return (index <= 3)?
                                     <li>
-                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
                                 :null
 
@@ -52,13 +52,13 @@ function Skills() {
                 </div>   
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
-                    <div class="skills2">
+                    <div className="skills2">
 
                         {elements.map(function(value, index){
 
                             return (index > 3 && index <= 7)?
                                     <li>
-                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
                                 :null
 
@@ -69,13 +69,13 @@ function Skills() {
                 </div>  
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
-                    <div class="skills2">
+                    <div className="skills2">
 
                         {elements.map(function(value, index){
 
                             return (index > 7 && index < 12)?
                                     <li>
-                                        <h3><img src={value.img} /></h3><span class="bar"><span class={value.class}></span></span>
+                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
                                 :null
 

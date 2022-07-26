@@ -1,8 +1,3 @@
-import igpic from '../img/icon/ig.png';
-import fbpic from '../img/icon/fb.png';
-import ghpic from '../img/icon/github.png';
-import linkedinpic from '../img/icon/linkedin.png';
-
 function Footer() {
     return(
         <>
@@ -12,10 +7,10 @@ function Footer() {
                     <div className="row">
 
                         <div className="col-12 mt-5 pfooter">
-                            <a href="https://www.facebook.com/straightedge58"><img src={fbpic}/></a>
-                            <a href="https://www.instagram.com/punker58/"><img src={igpic}/></a>
-                            <a href="https://www.linkedin.com/in/francesco-castiello-pk58/"><img src={linkedinpic}/></a>
-                            <a href="https://github.com/Punker58"><img src={ghpic}/></a>
+                            <a href="https://www.facebook.com/straightedge58"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/punker58/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/francesco-castiello-pk58/"><i class="fa-brands fa-reddit"></i></a>
+                            <a href="https://github.com/Punker58"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
 
                         <div className="col-12 mt-1 mb-5 ">
