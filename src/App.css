@@ -49,10 +49,9 @@ ul {
 }
 
 /** NAVBAR **/
-
-.navbar-nav {
-    margin-top:2.5vh !important;
-    margin-right:5vh !important;
+.navbar-brand img {
+    width: 10rem;
+    margin-top: 1.5rem;
 }
 
 /** SLOGAN **/
@@ -230,6 +229,7 @@ footer p{
 }
 
 .divider-58 {
+    border-top: none !important;
     fill: var(--main-color) !important;
 }
 
@@ -385,24 +385,45 @@ figure>img:hover {
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
 
-    .social {
-        display:none !important;
+    .social, .navbar-nav {
+        display: none !important;
     }
+
+    .navbar-brand {
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    .slogan {
+        margin-top: 8rem !important;
+    }
+
 }
 
 /* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+
+    .social, .navbar-nav {
+        display:none !important;
+    }
 
 }
  
 /* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+    .navbar-nav {
+        display:none !important;
+    }
 
 }
  
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {
+@media only screen and (max-width: 912px) {
 
+    .navbar-nav {
+        display:none !important;
+    }
 }
 
 /* Extra big screen devices (1200px and above) */
