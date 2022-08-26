@@ -10,6 +10,9 @@ import phppic from '../img/php.png';
 import mysqlpic from '../img/mysql.png';
 import ps from '../img/ps.png';
 import gitpic from '../img/git.png';
+import mongopic from '../img/mongo.png';
+import bulmapic from '../img/bulma.png';
+import pythonpic from '../img/python.png';
 
 function Skills() {
 
@@ -19,14 +22,17 @@ function Skills() {
         {img: css, class:'shtml'},
         {img: jspic, class:'sjs'},
         {img: jquery, class:'sjs'},
+        {img: gitpic, class:'shtml'},
         {img: bt5, class:'shtml'},
         {img: tailpic, class:'sjs'},
-        {img: reactpic, class:'sreactpic'},
+        {img: bulmapic, class:'shtml'},
         {img: npmpic, class:'shtml'},
-        {img: phppic, class:'shtml'},
-        {img: mysqlpic, class:'shtml'},
         {img: ps, class:'sreactpic'},
-        {img: gitpic, class:'shtml'}		
+        {img: reactpic, class:'sreactpic'},
+        {img: phppic, class:'shtml'},
+        {img: pythonpic, class:'sreactpic'},
+        {img: mysqlpic, class:'shtml'},
+        {img: mongopic, class:'shtml'}
     ];
 
     return (
@@ -39,7 +45,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index <= 3)?
+                            return (index <= 4)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
@@ -56,7 +62,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 3 && index <= 7)?
+                            return (index > 4 && index <= 9)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
@@ -73,7 +79,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 7 && index < 12)?
+                            return (index > 9 && index < 15)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
