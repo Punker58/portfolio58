@@ -7,6 +7,7 @@ import tailpic from '../img/tailwind.png';
 import reactpic from '../img/react.png';
 import npmpic from '../img/npm.png';
 import phppic from '../img/php.png';
+import laravelpic from '../img/laravel.png';
 import mysqlpic from '../img/mysql.png';
 import ps from '../img/ps.png';
 import gitpic from '../img/git.png';
@@ -30,6 +31,7 @@ function Skills() {
         {img: ps, class:'sreactpic'},
         {img: reactpic, class:'sreactpic'},
         {img: phppic, class:'shtml'},
+        {img: laravelpic, class:'shtml'},
         {img: pythonpic, class:'sreactpic'},
         {img: mysqlpic, class:'shtml'},
         {img: mongopic, class:'shtml'}
@@ -45,7 +47,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index <= 4)?
+                            return (index <= 5)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
@@ -62,7 +64,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 4 && index <= 9)?
+                            return (index > 5 && index <= 10)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
@@ -79,7 +81,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 9 && index < 15)?
+                            return (index > 10 && index < 16)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>

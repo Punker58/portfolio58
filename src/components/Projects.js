@@ -1,6 +1,7 @@
 import pmonaci from '../img/projects/monaci.jpg';
 import pmagliozzi from '../img/projects/magliozzi.jpg';
 import pfreestyle from '../img/projects/freestyle.jpg';
+import psswdgenpy from '../img/projects/psswd-gen-py.png';
 import pdifferent from '../img/projects/different.jpg';
 
 function  Projects() {
@@ -10,7 +11,8 @@ function  Projects() {
         {aos:'fade-right', img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
         {aos:'fade-left', img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
         {aos:'fade-right', img:pfreestyle, url:'https://www.freestyleconceptstore.it/'},
-        {aos:'fade-left', img:pdifferent, url:'https://www.wearedifferentboutique.it/'}
+        {aos:'fade-left', img:psswdgenpy, url:'https://github.com/Punker58/password-gen-by-castorino'}
+        //{aos:'fade-left', img:pdifferent, url:'https://www.wearedifferentboutique.it/'}
     ];
 
     return(
