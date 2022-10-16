@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio58/static/css/main.bb92dd9e.css",
-    "main.js": "/portfolio58/static/js/main.2e2e73a4.js",
+    "main.js": "/portfolio58/static/js/main.f4365f77.js",
     "static/js/787.33db0b78.chunk.js": "/portfolio58/static/js/787.33db0b78.chunk.js",
     "static/media/bg.jpg": "/portfolio58/static/media/bg.3b3f6ed4e755f2e2ba1d.jpg",
     "static/media/mongo.png": "/portfolio58/static/media/mongo.dbbb579b05b08096237c.png",
@@ -10,6 +10,7 @@
     "static/media/freestyle.jpg": "/portfolio58/static/media/freestyle.f49eb081782364a82a8e.jpg",
     "static/media/mysql.png": "/portfolio58/static/media/mysql.0b10a3633a62d133c5ca.png",
     "static/media/jquery.png": "/portfolio58/static/media/jquery.3cbecd0f06eb6f8ecf84.png",
+    "static/media/laravel.png": "/portfolio58/static/media/laravel.9b8eec2e69797f4965b9.png",
     "static/media/different.jpg": "/portfolio58/static/media/different.de8d6ec7950ebe80cf69.jpg",
     "static/media/magliozzi.jpg": "/portfolio58/static/media/magliozzi.829fb829b2cfad84115f.jpg",
     "static/media/git.png": "/portfolio58/static/media/git.e7cc1ee44efe129ea782.png",
@@ -22,14 +23,15 @@
     "static/media/css.png": "/portfolio58/static/media/css.6a65506bc1caebab79f6.png",
     "static/media/logo.png": "/portfolio58/static/media/logo.3fb6936f57aa28e0c047.png",
     "static/media/bulma.png": "/portfolio58/static/media/bulma.4c728346686b8e35f5a0.png",
+    "static/media/psswd-gen-py.png": "/portfolio58/static/media/psswd-gen-py.1c1369e1e991b3085d20.png",
     "static/media/html.png": "/portfolio58/static/media/html.1b7cf2263b08ec24bce9.png",
     "index.html": "/portfolio58/index.html",
     "main.bb92dd9e.css.map": "/portfolio58/static/css/main.bb92dd9e.css.map",
-    "main.2e2e73a4.js.map": "/portfolio58/static/js/main.2e2e73a4.js.map",
+    "main.f4365f77.js.map": "/portfolio58/static/js/main.f4365f77.js.map",
     "787.33db0b78.chunk.js.map": "/portfolio58/static/js/787.33db0b78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb92dd9e.css",
-    "static/js/main.2e2e73a4.js"
+    "static/js/main.f4365f77.js"
   ]
 }
