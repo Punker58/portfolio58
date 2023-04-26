@@ -10,9 +10,8 @@ function  Projects() {
     let elements = [
         {aos:'fade-right', img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
         {aos:'fade-left', img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
-        {aos:'fade-right', img:pfreestyle, url:'https://www.freestyleconceptstore.it/'},
+        {aos:'fade-right', img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
         {aos:'fade-left', img:psswdgenpy, url:'https://github.com/Punker58/password-gen-by-castorino'}
-        //{aos:'fade-left', img:pdifferent, url:'https://www.wearedifferentboutique.it/'}
     ];
 
     return(

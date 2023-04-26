@@ -261,7 +261,6 @@ footer p{
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 5s linear infinite;
     display: inline-block;
 }
 
@@ -270,40 +269,13 @@ figure>img:hover {
     transform: scale(1.1);
 }
 
-.projects>.container>.row>h1 {
+.projects>.container>.row>h1, .about>.container>.row>h1, .skills>.container>.row>h1 {
     text-transform: uppercase; 
     background-image: linear-gradient(
       -225deg,
       var(--main-color) 0%,
       var(--main-color)29%,
       var(--text-color) 67%,
-      var(--main-color) 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
-
-/** SEZIONE SKILLS **/
-
-.skills>.container>.row>h1 {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      -225deg,
-      var(--main-color) 0%,
-      var(--text-color)29%,
-      var(--main-color) 67%,
       var(--text-color) 100%
     );
     background-size: auto auto;
@@ -312,30 +284,21 @@ figure>img:hover {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
     display: inline-block;
 }
 
-/** SEZIONE ABOUT **/
-.about>.container>.row>h1 {
-    text-transform: uppercase; 
+
+/** SEZIONE SKILLS **/
+
+.skills>.container>.row>h1 {
     background-image: linear-gradient(
       -225deg,
-      var(--main-color) 0%,
+      var(--text-color) 0%,
       var(--main-color)29%,
-      var(--text-color) 67%,
+      var(--main-color) 67%,
       var(--main-color) 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
+    ) !important; 
 }
-
 
 /* HTML */
 .shtml{

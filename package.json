@@ -1,7 +1,7 @@
 {
   "homepage": "https://punker58.github.io/portfolio58",
   "name": "portfolio58",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",

@@ -14,6 +14,9 @@ import gitpic from '../img/git.png';
 import mongopic from '../img/mongo.png';
 import bulmapic from '../img/bulma.png';
 import pythonpic from '../img/python.png';
+import luapic from '../img/lua.png';
+import electronpic from '../img/electron.png';
+import flaskpic from '../img/flask.png';
 
 function Skills() {
 
@@ -24,16 +27,19 @@ function Skills() {
         {img: jspic, class:'sjs'},
         {img: jquery, class:'sjs'},
         {img: gitpic, class:'shtml'},
-        {img: bt5, class:'shtml'},
-        {img: tailpic, class:'sjs'},
+        {img: ps, class:'sreactpic'}, 
+        {img: tailpic, class:'shtml'},
         {img: bulmapic, class:'shtml'},
         {img: npmpic, class:'shtml'},
-        {img: ps, class:'sreactpic'},
-        {img: reactpic, class:'sreactpic'},
-        {img: phppic, class:'shtml'},
+        {img: bt5, class:'shtml'},
+        {img: reactpic, class:'sjs'},
+        {img: flaskpic, class:'sreactpic'},   
         {img: laravelpic, class:'shtml'},
-        {img: pythonpic, class:'sreactpic'},
+        {img: phppic, class:'shtml'},
+        {img: pythonpic, class:'shtml'},
         {img: mysqlpic, class:'shtml'},
+        {img: luapic, class:'shtml'},
+        {img: electronpic, class:'sreactpic'},
         {img: mongopic, class:'shtml'}
     ];
 
@@ -64,7 +70,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 5 && index <= 10)?
+                            return (index > 5 && index <= 12)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
@@ -81,7 +87,7 @@ function Skills() {
 
                         {elements.map(function(value, index){
 
-                            return (index > 10 && index < 16)?
+                            return (index > 12 && index < 20)?
                                     <li>
                                         <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
                                     </li>
