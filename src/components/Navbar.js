@@ -1,32 +1,39 @@
 import logo from '../img/icon/logo.png'
 
+const lista = [
+    {link: '#', text:'Home'},
+    {link: '#lavoro', text:'Lavoro'},
+    {link: '#progetti', text:'Progetti'},
+    {link: '#skills', text:'Skills'},
+    {link: '#chisono', text:'Chi sono'},
+    {link: '#contatti', text:'Contatti'}
+];
 
 function Navbar() {
     return(
+        <>
         
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <a className="navbar-brand">
+                <a href="#home" className="navbar-brand">
                     <img src={logo} alt="..."/>
                 </a>
                 <div className="" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#about">About me</a>
-                        </li>
+
+                        {lista.map(function(value){
+                            return <li className="nav-item">
+                                        <a className="nav-link" aria-current="page" href={value.link}>{value.text}</a>
+                                    </li>
+                        })}
+
                     </ul>
+                    <hr/>
                 </div>
             </div>
         </nav>
+
+        </>
 
     );
 }

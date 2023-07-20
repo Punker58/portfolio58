@@ -4,7 +4,6 @@ import pfreestyle from '../img/projects/freestyle.jpg';
 import psswdgenpy from '../img/projects/psswd-gen-py.png';
 import pdifferent from '../img/projects/different.jpg';
 
-function  Projects() {
 
     //array progetti
     let elements = [
@@ -13,6 +12,8 @@ function  Projects() {
         {aos:'fade-right', img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
         {aos:'fade-left', img:psswdgenpy, url:'https://github.com/Punker58/password-gen-by-castorino'}
     ];
+    
+function  Projects() {
 
     return(
 

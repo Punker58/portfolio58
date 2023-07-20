@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Slogan from './components/Slogan';
 import Social from './components/Social';
+import Lavoro from './components/lavoro';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import About from './components/About';
@@ -29,18 +30,30 @@ function App() {
                 <Navbar/>
               </div>
 
-              <div className='col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8'>
+              <div className='col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5'>
                 <Slogan/>
               </div>
 
-              <div className='col-4'>
-                <Social/>
+              <div className='col'>
+                <Social/> 
+              </div>
+
+              <div className='scroll col-12'>
+                <a className='font-merriWeather' href="#lavoro"><span></span><span></span><span></span></a>
               </div>
 
             </div>
 
           </div>
           
+        </section>
+
+        <section id="lavoro">
+          <div className='container'>
+            <div className='row'>
+              <Lavoro/>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className='projects'>
