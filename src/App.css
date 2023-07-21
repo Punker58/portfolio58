@@ -196,7 +196,7 @@
     color: var(--main-color) !important;
     text-align: right !important;
     margin-top: 5vh;
-    font-size: 8vh;
+    font-size: 4rem;
 }
 
 .txt1 {
@@ -207,7 +207,7 @@
 figure>img {
     cursor: pointer;
     transition: transform .2s;
-    width: 18rem;
+    width: 13rem;
 }
 
 /** SEZIONE SKILLS **/
@@ -216,13 +216,13 @@ figure>img {
     color: var(--text-color) !important;
     text-align: left !important;
     margin-top: 5vh;
-    font-size: 8vh;
+    font-size: 4rem;
 }
 
 .skills2>li>h3>img {
     font-style: italic !important;
-    width:5rem;
-    height:5rem;
+    width:3.2rem;
+    height:auto;
 }
 
 .skills2 li {
@@ -252,22 +252,51 @@ figure>img {
     color: var(--main-color) !important;
     text-align: right !important;
     margin-top: 5vh;
-    font-size: 8vh;
+    font-size: 4rem;
 }
 
 .about p {
     font-weight: 400 !important;
     font-style: italic;
-    font-family: 'Merriweather', serif !important;
-    background-color: var(--main-color) !important;
-    border-radius: 2vh;
-    text-align: center;
+    color: var(--main-color) !important;
     padding: 2rem !important;
+}
+
+.about em {
+    font-family: 'Merriweather', serif !important;
+    color: var(--first-color) !important;
+    background-color: yellow !important;
+}
+
+.about img {
+    height: 22rem;
 }
 
 ul>li {
     margin-top: 1rem !important;
     color: var(--second-color) !important;
+}
+
+/** CONTATTI **/
+.contatti h1 {
+    color: var(--main-color) !important;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 4rem;
+}
+
+.form-control {
+    color: var(--main-color) !important;
+    font-family: 'Merriweather', serif !important;
+}
+
+label {
+    color: var(--main-color) !important;
+    font-family: 'Merriweather', serif !important;
+}
+
+.contatti>input {
+    color: var(--main-color) !important;
 }
 
 /** FOOTER **/

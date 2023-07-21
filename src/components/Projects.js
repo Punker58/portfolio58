@@ -24,6 +24,7 @@ function  Projects() {
 
         <>
 
+            <div className='text-center'>
             {elements.map(function(value, index){
                 
                 return (index <= 3)? <a className="p1" href={value.url}><figure id="figure" className="figure mt-5 mb-5 ms-3 me-3"  data-aos-duration="1000">
@@ -35,7 +36,7 @@ function  Projects() {
             
             <hr className='text-black'/>
 
-            <div className='text-center'>
+            
                 {elements.map(function(value, index){
                     
                     return (index > 3 && index <= 6)? <a className="p1" href={value.url}><figure id="figure" className="figure mt-5 mb-5 ms-3 me-3"  data-aos-duration="1000">
