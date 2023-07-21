@@ -7,6 +7,7 @@ import Lavoro from './components/lavoro';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import About from './components/About';
+import Contatti from './components/Contatti';
 import Footer from './components/Footer';
 
 // AOS ANIMATION
@@ -56,7 +57,9 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className='projects'>
+        <hr className='text-black'/>
+
+        <section id="progetti" className='projects'>
           <div className='container'>
             <div className='row'>
             <h1 className="fst-italic">progetti</h1>
@@ -93,16 +96,29 @@ function App() {
             </svg>
         </div>       
 
-        <section id="about" className='about'>
+        <section id="chisono" className='about'>
           <div className='container'>
             <div className='row'>
-            <h1 className="fst-italic">about me</h1>
+            <h1 className="fst-italic">chi sono</h1>
               <div className='col-12 mt-5'>
                 <About/>
               </div>
             </div>
           </div>
         </section> 
+
+        <hr className='text-black'/>
+
+        <section id="contatti" className='contatti '>
+          <div className='container text-center '>
+              <h1 className="fst-italic">contattami</h1>
+              <div className='row'>
+                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded font-merriWeather shadow'>
+                    <Contatti/>
+                  </div>
+                </div>
+              </div>
+        </section>
 
         <Footer/>      
 
