@@ -9,8 +9,15 @@ function Slogan() {
             <hr/>
             <span className="font-merriWeather fst-italic text-white-50">Costruisco siti web per imprese e privati <br/>seguendo 2 concetti fondamentali : Design Unico & Sviluppo perfetto.</span> <br/>
 
-            <button type="button" className="fs-1 btn btn-outline-danger me-5 mt-5" href="tel:+393281131848">CHIAMA</button>
-            <button type="button" className="fs-1 btn btn-outline-danger mt-5" href="#contacts">EMAIL</button>
+            <div className="row mt-5">
+                <div className="col-6">
+                    <button type="button" className="fs-1 btn btn-outline-danger " href="tel:+393281131848">CHIAMA</button>
+                </div>
+                <div className="col-6">
+                    <button type="button" className="fs-1 btn btn-outline-danger float-end " href="#contacts">EMAIL</button>
+                </div>
+            </div>
+            
 
         </>
     );

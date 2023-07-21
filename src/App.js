@@ -59,7 +59,7 @@ function App() {
         <section id="projects" className='projects'>
           <div className='container'>
             <div className='row'>
-            <h1 className="fst-italic">projects</h1>
+            <h1 className="fst-italic">progetti</h1>
               <div className='col-12 mt-5'>
                 <Projects/>
               </div>
