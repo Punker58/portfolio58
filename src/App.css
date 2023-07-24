@@ -282,7 +282,7 @@ ul>li {
     color: var(--main-color) !important;
     text-align: center;
     margin-top: 5vh;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .form-control {
@@ -308,8 +308,6 @@ label {
 footer {
     background-color: var(--third-color)!important;
 }
-
-
 
 footer ul li {
     list-style-type: none !important;

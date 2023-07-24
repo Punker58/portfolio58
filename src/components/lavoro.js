@@ -37,8 +37,8 @@ function Lavoro() {
 
             </div>
 
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4  mt-5 mb-5 ">
-                <img src={logo} alt='foto'/>
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-5 mb-5 ">
+                <img src={logo} style={{width: 400}} alt='foto'/>
             </div>
 
         </>

@@ -7,16 +7,16 @@ import pcaffe from '../img/projects/prepare_caffe.png';
 import ppfivem from '../img/projects/fivem.png';
 
 
-    //array progetti
-    let elements = [
-        { img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
-        { img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
-        { img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
-        { img:pdifferent, url:'https://github.com/Punker58/freestyle-torino'},
-        { img:ppsswdgen, url:'https://github.com/Punker58/freestyle-torino'},
-        { img:pcaffe, url:'https://github.com/Punker58/freestyle-torino'},
-        { img:ppfivem, url:'https://github.com/Punker58/freestyle-torino'}    
-    ];
+//array progetti
+let elements = [
+    { img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
+    { img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
+    { img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
+    { img:pdifferent, url:'https://github.com/Punker58/freestyle-torino'},
+    { img:ppsswdgen, url:'https://github.com/Punker58/freestyle-torino'},
+    { img:pcaffe, url:'https://github.com/Punker58/freestyle-torino'},
+    { img:ppfivem, url:'https://github.com/Punker58/freestyle-torino'}    
+];
     
 function  Projects() {
 

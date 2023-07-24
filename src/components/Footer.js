@@ -17,6 +17,20 @@ const linkSocial= [
     {"link" : "#chisono", "nome" : "Linkedin"}
 ];
 
+const linkDesign= [
+    {"link" : "#home", "nome" : "Magliozzi Group"},
+    {"link" : "#lavoro", "nome" : "Freestyle concept store"},
+    {"link" : "#progetti", "nome" : "Monacidomenico.lab"},
+    {"link" : "#skills", "nome" : "We are different - Boutique"},
+];
+
+const linkSocialFrontEnd = [
+    {"link" : "https://www.facebook.com/straightedge58", "icon" : "fa-brands fa-instagram m-1"},
+    {"link" : "https://www.instagram.com/punker58/", "icon" : "fa-brands fa-facebook m-1"},
+    {"link" : "https://www.linkedin.com/in/francesco-castiello-pk58/", "icon" : "fa-brands fa-reddit m-1"},
+    {"link" : "https://github.com/Punker58", "icon" : "fa-brands fa-linkedin m-1"}
+];
+
 function Footer() {
     return(
         <>
@@ -25,11 +39,11 @@ function Footer() {
                 <div className="container text-break mt-5">
                     <div className="row">
 
-                        <div className="col-3 mt-4 mb-4">
+                        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-4 mb-4">
                             <img src={logo} height={'100px'} alt='...'/>
                         </div>
 
-                        <div className="col-3 font-merriWeather">
+                        <div className="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 font-merriWeather">
                             <p className='fw-bold'>Mappa del sito</p>
 
                             {linkSito.map(function(data) {
@@ -40,7 +54,7 @@ function Footer() {
 
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                             <p className='fw-bold m-4'>Social</p>
 
                             {linkSocial.map(function(data) {
@@ -51,24 +65,33 @@ function Footer() {
 
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <p className='fw-bold m-4'>Design</p>
+
+                            {linkDesign.map(function(data) {
+                                return (
+                                    <p className='m-4'><a href={data.link} className='font-merriWeather text-white-50'>{data.nome}</a></p>
+                                )
+                            })}
 
                         </div>
 
                         <hr/>
 
-                        <div className="col-12 mt-5 pfooter">
-                            <a href="https://www.facebook.com/straightedge58"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.instagram.com/punker58/"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/francesco-castiello-pk58/"><i class="fa-brands fa-reddit"></i></a>
-                            <a href="https://github.com/Punker58"><i class="fa-brands fa-linkedin"></i></a>
+                        <div className="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11 mt-1 mb-5 ">
+                            <p className='font-merriWeather'>
+                                Copyright ©2023 Francesco Castiello<br/>
+                                <a href="#" className='font-merriWeather' >Privacy Policy</a> - 
+                                <a href="#" className='font-merriWeather' >Cookie Policy</a>
+                            </p>
                         </div>
 
-                        <div className="col-12 mt-1 mb-5 ">
-                            <p>
-                                ©2022 Francesco Castiello<br/>
-                                Tutti i diritti riservati
-                            </p>
+                        <div className="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1 mb-5 pfooter">
+                            {linkSocialFrontEnd.map(function(data) {
+                                    return (
+                                        <a href={data.link}><i className={data.icon}></i></a>
+                                    )
+                                })}
                         </div>
 
                     </div>
