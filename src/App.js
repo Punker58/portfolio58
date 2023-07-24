@@ -23,7 +23,7 @@ function App() {
     <>
       <div>
 
-        <section className='home'>
+        <section id='home' className='home'>
           <div className='container'>
             <div className='row'>
 
@@ -113,7 +113,7 @@ function App() {
           <div className='container text-center '>
               <h1 className="fst-italic">contattami</h1>
               <div className='row'>
-                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded font-merriWeather shadow'>
+                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded font-merriWeather shadow form58'>
                     <Contatti/>
                   </div>
                 </div>

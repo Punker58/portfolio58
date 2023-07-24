@@ -3,24 +3,23 @@ function Contatti() {
         <>
 
                 <div class="form-floating mb-3"> 
-                    <input type="text" className="form-control" id="floatingInput" placeholder="Nome"/>
+                    <input type="text" className="form-control border border-dark" id="floatingInput" placeholder="Nome"/>
                     <label for="floatingInput" >Nome</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" className="form-control" id="floatingPassword" placeholder="Cognome"/>
+                    <input type="text" className="form-control border border-dark" id="floatingPassword" placeholder="Cognome"/>
                     <label for="floatingPassword">Cognome</label>
                 </div>
 
                 <div class="form-floating">
-                    <input type="email" className="form-control" id="floatingPassword" placeholder="Email"/>
+                    <input type="email" className="form-control border border-dark" id="floatingPassword" placeholder="Email"/>
                     <label for="floatingPassword">Email</label>
                 </div>
 
                 <p className="text-black font-merriWeather mt-3">Parlami del tuo progetto in modo dettagliato, per esempio le funzionalità chiave.</p>
                 <div class="form-floating">
-                    <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: '100px'}}></textarea>
-                    <label for="floatingTextarea2">Note</label>
+                    <textarea className="form-control border border-dark"  id="floatingTextarea2" style={{ height: '100px'}}></textarea>
                 </div>
 
                 <div class="form-check mt-3">

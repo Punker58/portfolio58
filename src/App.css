@@ -295,6 +295,10 @@ label {
     font-family: 'Merriweather', serif !important;
 }
 
+.form58 {
+    background-color: #D9D9D9 !important;
+}
+
 .contatti>input {
     color: var(--main-color) !important;
 }
@@ -303,6 +307,12 @@ label {
 
 footer {
     background-color: var(--third-color)!important;
+}
+
+
+
+footer ul li {
+    list-style-type: none !important;
 }
 
 footer p{
