@@ -6,10 +6,9 @@ import ppsswdgen from '../img/projects/password_gen_python.png';
 import pcaffe from '../img/projects/prepare_caffe.png';
 import ppfivem from '../img/projects/fivem.png';
 
-
 //array progetti
 let elements = [
-    { img:pmonaci, url:'https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab'},
+    { img:pmonaci, url:'dettagli-progetto/monaci'},
     { img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
     { img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
     { img:pdifferent, url:'https://github.com/Punker58/freestyle-torino'},
@@ -46,8 +45,6 @@ function  Projects() {
                             :null
                 })}
             </div>
-
-
 
         </>
  

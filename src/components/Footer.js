@@ -1,6 +1,6 @@
 import logo from '../img/icon/logo.png';
 
-const linkSito= [
+const linkSito = [
     {"link" : "#home", "nome" : "Home"},
     {"link" : "#lavoro", "nome" : "Visione"},
     {"link" : "#progetti", "nome" : "Progetti"},
@@ -9,7 +9,7 @@ const linkSito= [
     {"link" : "#contatti", "nome" : "Preventivi"},
 ];
 
-const linkSocial= [
+const linkSocial = [
     {"link" : "#home", "nome" : "Facebook"},
     {"link" : "#lavoro", "nome" : "Whatsapp"},
     {"link" : "#progetti", "nome" : "Instagram"},
@@ -17,7 +17,7 @@ const linkSocial= [
     {"link" : "#chisono", "nome" : "Linkedin"}
 ];
 
-const linkDesign= [
+const linkDesign = [
     {"link" : "#home", "nome" : "Magliozzi Group"},
     {"link" : "#lavoro", "nome" : "Freestyle concept store"},
     {"link" : "#progetti", "nome" : "Monacidomenico.lab"},

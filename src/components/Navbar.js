@@ -1,7 +1,7 @@
 import logo from '../img/icon/logo.png'
 
 const lista = [
-    {link: '#home', text:'Home'},
+    {link: '/portfolio58', text:'Home'},
     {link: '#lavoro', text:'Lavoro'},
     {link: '#progetti', text:'Progetti'},
     {link: '#skills', text:'Skills'},
