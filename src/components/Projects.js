@@ -9,12 +9,12 @@ import ppfivem from '../img/projects/fivem.png';
 //array progetti
 let elements = [
     { img:pmonaci, url:'dettagli-progetto/monaci'},
-    { img:pmagliozzi, url:'https://www.magliozzi-group.com/' },
-    { img:pfreestyle, url:'https://github.com/Punker58/freestyle-torino'},
-    { img:pdifferent, url:'https://github.com/Punker58/freestyle-torino'},
-    { img:ppsswdgen, url:'https://github.com/Punker58/freestyle-torino'},
-    { img:pcaffe, url:'https://github.com/Punker58/freestyle-torino'},
-    { img:ppfivem, url:'https://github.com/Punker58/freestyle-torino'}    
+    { img:pmagliozzi,  url:'dettagli-progetto/magliozzi' },
+    { img:pfreestyle,  url:'dettagli-progetto/freestyle'},
+    { img:pdifferent,  url:'dettagli-progetto/wearedifferent'},
+    { img:ppsswdgen,  url:'#'},
+    { img:pcaffe,  url:'#'},
+    { img:ppfivem,  url:'#'}    
 ];
     
 function  Projects() {

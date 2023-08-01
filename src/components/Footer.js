@@ -18,10 +18,10 @@ const linkSocial = [
 ];
 
 const linkDesign = [
-    {"link" : "#home", "nome" : "Magliozzi Group"},
-    {"link" : "#lavoro", "nome" : "Freestyle concept store"},
-    {"link" : "#progetti", "nome" : "Monacidomenico.lab"},
-    {"link" : "#skills", "nome" : "We are different - Boutique"},
+    {"link" : "dettagli-progetto/magliozzi", "nome" : "Magliozzi Group"},
+    {"link" : "dettagli-progetto/freestyle", "nome" : "Freestyle concept store"},
+    {"link" : "dettagli-progetto/monaci", "nome" : "Monacidomenico.lab"},
+    {"link" : "dettagli-progetto/wearedifferent", "nome" : "We are different - Boutique"},
 ];
 
 const linkSocialFrontEnd = [
