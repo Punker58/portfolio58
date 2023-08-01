@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate  } from 'react-router-dom';
 import Back from '../img/x.svg'
 
 import fullPicMonaci from '../img/monaci/1.jpg'
@@ -70,21 +70,21 @@ function DettagliProjects() {
       img4: Pic3Weare,
     }
   }
+
+  const navigate = useNavigate();
+
+  const backButton = () => {
+    navigate('/portfolio58');
+  };
     
   return (
     <>
     
-      <div className='container mt-5'>
-        <div className='row'>
-
-        </div>
-      </div>
-
       <div className='container mt-5 mb-5'>
         <div className='row border border-danger border-2 p-5'>
 
-          <div href='/portfolio58#progetti' className='col-12 mb-5'>
-            <div className='col-2 border border-danger rounded-pill'>
+          <div onClick={backButton} className='col-12 mb-5 '>
+            <div className='col-2 border border-danger rounded-pill back'>
               <img src={Back} alt='...' width={'50px'}/>
               <span className='text-black'>TORNA INDIETRO</span>
             </div>
@@ -115,9 +115,9 @@ function DettagliProjects() {
               <img  className="rounded " src={project.img} alt='...' width={'800px'} />
 
               <hr class="border border-danger border-2 opacity-50"/>
-              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2 ' src={project.img2} alt='...' width={'200px'} />
-              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2' src={project.img3} alt='...' width={'200px'} />
-              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2' src={project.img4} alt='...' width={'200px'} />
+              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2 littleZoom'  src={project.img2} alt='...' width={'200px'} />
+              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2 littleZoom'  src={project.img3} alt='...' width={'200px'} />
+              <img className='mt-5 ms-5 me-5 rounded border border-dark border-2 littleZoom'  src={project.img4} alt='...' width={'200px'} />
 
             </div>
 

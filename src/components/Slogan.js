@@ -1,4 +1,5 @@
 function Slogan() {
+
     return (
         <>
 
@@ -11,10 +12,10 @@ function Slogan() {
 
             <div className="row mt-5">
                 <div className="col-6">
-                    <button type="button" className="fs-1 btn btn-outline-danger " href="tel:+393281131848">CHIAMA</button>
+                    <a type="button" className="fs-1 btn btn-outline-danger " href="tel:+393281131848">CHIAMA</a>
                 </div>
                 <div className="col-6">
-                    <button type="button" className="fs-1 btn btn-outline-danger float-end " href="#contacts">EMAIL</button>
+                    <a type="button" className="fs-1 btn btn-outline-danger float-end" href="#contatti">EMAIL</a>
                 </div>
             </div>
             
