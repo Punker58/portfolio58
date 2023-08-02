@@ -1,4 +1,5 @@
 import logo from '../img/icon/logo.png'
+import { useMatch } from "react-router-dom";
 
 const lista = [
     {link: '/portfolio58', text:'Home'},
@@ -10,6 +11,13 @@ const lista = [
 ];
 
 function Navbar() {
+
+    const navStyle = useMatch({
+        path: "/portfolio58"
+    });
+
+    const colorBlack = 'black';
+
     return(
         <>
         
@@ -23,7 +31,7 @@ function Navbar() {
 
                         {lista.map(function(value){
                             return <li className="nav-item">
-                                        <a className="nav-link" aria-current="page" href={value.link}>{value.text}</a>
+                                        <a className="nav-link" style= {{ color: navStyle ? "white" : colorBlack}}  aria-current="page" href={value.link}>{value.text}</a>
                                     </li>
                         })}
 

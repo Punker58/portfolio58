@@ -12,9 +12,9 @@ let elements = [
     { img:pmagliozzi,  url:'dettagli-progetto/magliozzi' },
     { img:pfreestyle,  url:'dettagli-progetto/freestyle'},
     { img:pdifferent,  url:'dettagli-progetto/wearedifferent'},
-    { img:ppsswdgen,  url:'#'},
-    { img:pcaffe,  url:'#'},
-    { img:ppfivem,  url:'#'}    
+    { img:ppsswdgen  },
+    { img:pcaffe  },
+    { img:ppfivem }    
 ];
     
 function  Projects() {
@@ -27,7 +27,7 @@ function  Projects() {
             {elements.map(function(value, index){
                 
                 return (index <= 3)? <a className="p1" href={value.url}><figure id="figure" className="figure mt-5 mb-5 ms-3 me-3"  data-aos-duration="1000">
-                                <img src={value.img} className="figure-img img-fluid rounded" alt="..."/>
+                                <img src={value.img} className="figure-img img-fluid" alt="..."/>
                             </figure>
                         </a>
                         :null
@@ -38,10 +38,10 @@ function  Projects() {
             
                 {elements.map(function(value, index){
                     
-                    return (index > 3 && index <= 6)? <a className="p1" href={value.url}><figure id="figure" className="figure mt-5 mb-5 ms-3 me-3"  data-aos-duration="1000">
-                                    <img src={value.img} className="figure-img img-fluid rounded" alt="..."/>
+                    return (index > 3 && index <= 6)? <span className="p1"><figure id="figure" className="figure mt-5 mb-5 ms-3 me-3"  data-aos-duration="1000">
+                                    <img src={value.img} className="figure-img img-fluid" alt="..."/>
                                 </figure>
-                            </a>
+                            </span>
                             :null
                 })}
             </div>
