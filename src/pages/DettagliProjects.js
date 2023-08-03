@@ -1,4 +1,4 @@
-import { useParams, useNavigate  } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
@@ -36,56 +36,71 @@ function DettagliProjects() {
 
   if(params.name === 'monaci') {
     project =  {
-      progetto: 'web app / sito web',
-      cliente: 'monacidomenico.lab',
-      linguaggi: 'HTML, CSS, BOOTSTRAP, PHP, JAVASCRIPT',
-      periodo: '2021 - ORA',
+      titolo: 'MONACIDOMENICO.LAB',
+      sottotitolo: 'Salone di barbieri, presso Volla (NA).',
+      obiettivo: 'Ho bisogno di un’app che permetta ai miei clienti di prenotare facilmente, visualizzare i miei prodotti e conoscere la mia attività',
+      obiettivo2: 'Domenico Monaci - 2020',
       img: fullPicMonaci,
-      img2: PicMonaci,
-      img3: Pic2Monaci,
-      img4: Pic3Monaci,
+      img2: Pic2Monaci,
+      img3: Pic3Monaci,
+      img4: PicMonaci,
+      tec: html5,
+      tec2: css,
+      tec3: jspic,
+      tec4: phppic,
+      tec5: bt5
+
     }
   }else if(params.name === 'magliozzi') {
     project =  {
-      progetto: 'sito web',
-      cliente: 'magliozzi-group.it',
-      linguaggi: 'HTML, CSS, BOOTSTRAP, PHP, JAVASCRIPT',
-      periodo: '2021',
+      titolo: 'MAGLIOZZI GROUP',
+      sottotitolo: 'Impresa di installazioni, assistenza e manutezioni su: Climatizzazione, Elettrico, Idraulico.',
+      obiettivo: 'Ho bisogno di svecchiare il mio sito web, avrebbe bisogno di un redesign.',
+      obiettivo2: 'Magliozzi Group - 2021',
       img: fullPicMagliozzi,
       img2: PicMagliozzi,
       img3: Pic2Magliozzi,
       img4: Pic3Magliozzi,
+      tec: html5,
+      tec2: css,
+      tec3: jspic,
+      tec4: phppic,
+      tec5: bt5
     }
   }else if (params.name === 'freestyle') {
     project =  {
-      progetto: 'sito web',
-      cliente: 'freestyleconceptstore.it',
-      linguaggi: 'HTML, CSS, BOOTSTRAP, PHP, JAVASCRIPT',
-      periodo: '2022',
+      sottotitolo: 'Negozio di abbigliamento, presso Nichelino (TO)',
+      titolo: 'FREESTYLE CONCEPT STORE',
+      obiettivo: 'Ho bisogno di far conoscere il mio brand per tutta Italia.',
+      obiettivo2: 'freestyle concept store - 2022',
       img: fullPicFreestyle,
       img2: PicFreestyle,
       img3: Pic2Freestyle,
       img4: Pic3Freestyle,
+      tec: html5,
+      tec2: css,
+      tec3: jspic,
+      tec4: phppic,
+      tec5: bt5
     }
   }else if (params.name === 'wearedifferent') {
     project =  {
-      progetto: 'sito web',
-      cliente: 'wearedifferentboutique',
-      linguaggi: 'HTML, CSS, BOOTSTRAP, PHP, JAVASCRIPT',
-      periodo: '2021',
+      sottotitolo: 'Negozio di abbigliamento, presso Volla (NA)',
+      titolo: 'WEAREDIFFERENT - BOUTIQUE',
+      obiettivo: 'Ho bisogno di far conoscere il mio brand.',
+      obiettivo2: 'wearedifferent - 2021',
       img: fullPicweare,
       img2: PicWeare,
       img3: Pic2Weare,
       img4: Pic3Weare,
+      tec: html5,
+      tec2: css,
+      tec3: jspic,
+      tec4: phppic,
+      tec5: bt5
     }
   }
 
-
-  let elements = [
-    { img:html5, },
-    { img:css },
-    { img:jspic } 
-];
     
   return (
     <>
@@ -117,12 +132,12 @@ function DettagliProjects() {
               
               <div className='col-12 text-center'>
 
-                <h1 className='text-black'>MONACIDOMENICO.LAB</h1>
-                <span className='text-black  font-merriWeather'>Salone di barbieri, presso Volla (NA).</span>
+                <h1 className='text-black'>{project.titolo}</h1>
+                <span className='text-black font-merriWeather'>{project.sottotitolo}</span>
 
               </div>
 
-              <div className='col-12 mt- mb-5 text-center'>
+              <div className='col-12 mt-5 mb-5 text-center'>
                 <img className="rounded " src={project.img} alt='...' width={'800px'} />
               </div>
 
@@ -131,14 +146,13 @@ function DettagliProjects() {
               <div className='col-6 mt-5 p-5'>
                 <h3 className='text-black text-center'>Obiettivo</h3>
                 <p className='font-merriWeather text-black'>
-                  “Ho bisogno di un’app che permetta ai miei clienti di prenotare facilmente,
-                  visualizzare i miei prodotti e conoscere la mia attività”
+                  “{project.obiettivo}”
                 </p>
-                <p className='text-end text-black font-merriWeather'>Domenico Monaci - 2020</p>
+                <p className='text-end text-black font-merriWeather'>{project.obiettivo2}</p>
               </div>
 
               <div className='col-6 mt-5 mb-5'>
-                <img className="rounded " src={project.img} alt='...' width={'600px'} />
+                <img className="rounded " src={project.img2} alt='...' width={'600px'} />
               </div>
 
               </>
@@ -163,9 +177,16 @@ function DettagliProjects() {
           <h2 className="fst-italic ">Tecniche utilizzate</h2>
             <div className='col-12 mt-5 mb-5 text-center'>
 
-            {elements.map(function(value){     
-                return <img src={value.img} width={'100px'} alt='...'/>
-            })}
+              {
+                <>
+                  <img src={project.tec} width={'100px'} alt='...'/>
+                  <img src={project.tec2} width={'100px'} alt='...'/>
+                  <img src={project.tec3} width={'100px'} alt='...'/>
+                  <img src={project.tec4} width={'100px'} alt='...'/>
+                  <img src={project.tec5} width={'100px'} alt='...'/>
+                </>
+              }
+
 
             </div>
           </div>
@@ -186,16 +207,19 @@ function DettagliProjects() {
         <div className='container mt-5'>
           <div className='row'>
             
-            <div className='col-6 mt-5 mb-5'>
-              <img className="rounded " src={project.img} alt='...' width={'600px'} />
-            </div>
+            {
+              <>
 
-            <div className='col-6 mt-5 pt-5 text-center'>
-              <h3 className='text-black '>Visita il progetto</h3>
-                <a className="font-merriWeather text-black " href='https://play.google.com/store/apps/details?id=com.francescocastiello.domenicomonacilab&hl=it&gl=IT'>
-                  https://play.google.com/monacidomenicolab
-                </a>
-            </div>
+              <div className='col-6 mt-5 mb-5'>
+                <img className="rounded " src={project.img3} alt='...' width={'600px'} />
+              </div>
+
+              <div className='col-6 mt-5 mb-5'>
+                <img className="rounded " src={project.img4} alt='...' width={'600px'} />
+              </div>
+
+              </>
+            }
 
             <hr className='text-black'/>
 

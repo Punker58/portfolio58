@@ -1,27 +1,27 @@
 import logo from '../img/icon/logo.png';
 
 const linkSito = [
-    {"link" : "#home", "nome" : "Home"},
-    {"link" : "#lavoro", "nome" : "Visione"},
-    {"link" : "#progetti", "nome" : "Progetti"},
-    {"link" : "#skills", "nome" : "Skills"},
-    {"link" : "#chisono", "nome" : "About me"},
-    {"link" : "#contatti", "nome" : "Preventivi"},
+    {"link" : "/portfolio58#home", "nome" : "Home"},
+    {"link" : "/portfolio58#lavoro", "nome" : "Visione"},
+    {"link" : "/portfolio58#progetti", "nome" : "Progetti"},
+    {"link" : "/portfolio58#skills", "nome" : "Skills"},
+    {"link" : "/portfolio58#chisono", "nome" : "About me"},
+    {"link" : "/portfolio58#contatti", "nome" : "Preventivi"},
 ];
 
 const linkSocial = [
-    {"link" : "#home", "nome" : "Facebook"},
-    {"link" : "#lavoro", "nome" : "Whatsapp"},
-    {"link" : "#progetti", "nome" : "Instagram"},
-    {"link" : "#skills", "nome" : "Github"},
-    {"link" : "#chisono", "nome" : "Linkedin"}
+    {"link" : "/portfolio58#home", "nome" : "Facebook"},
+    {"link" : "/portfolio58#lavoro", "nome" : "Whatsapp"},
+    {"link" : "/portfolio58#progetti", "nome" : "Instagram"},
+    {"link" : "/portfolio58#skills", "nome" : "Github"},
+    {"link" : "/portfolio58#chisono", "nome" : "Linkedin"}
 ];
 
 const linkDesign = [
-    {"link" : "dettagli-progetto/magliozzi", "nome" : "Magliozzi Group"},
-    {"link" : "dettagli-progetto/freestyle", "nome" : "Freestyle concept store"},
-    {"link" : "dettagli-progetto/monaci", "nome" : "Monacidomenico.lab"},
-    {"link" : "dettagli-progetto/wearedifferent", "nome" : "We are different - Boutique"},
+    {"link" : "/dettagli-progetto/magliozzi", "nome" : "Magliozzi Group"},
+    {"link" : "/dettagli-progetto/freestyle", "nome" : "Freestyle concept store"},
+    {"link" : "/dettagli-progetto/monaci", "nome" : "Monacidomenico.lab"},
+    {"link" : "/dettagli-progetto/wearedifferent", "nome" : "We are different - Boutique"},
 ];
 
 const linkSocialFrontEnd = [
