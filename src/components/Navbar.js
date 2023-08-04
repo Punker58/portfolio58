@@ -1,5 +1,5 @@
 import logo from '../img/icon/logo.png'
-import { useMatch } from "react-router-dom";
+import { useMatch } from "react-router-dom"
 
 const lista = [
     {link: '/portfolio58', text:'Home'},
@@ -23,7 +23,7 @@ function Navbar() {
         
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <a href="#home" className="navbar-brand">
+                <a href="/portfolio58" className="navbar-brand">
                     <img src={logo} alt="..."/>
                 </a>
                 <div className="" id="navbarNav">
@@ -31,12 +31,12 @@ function Navbar() {
 
                         {lista.map(function(value){
                             return <li className="nav-item">
-                                        <a className="nav-link" style= {{ color: navStyle ? "white" : colorBlack}}  aria-current="page" href={value.link}>{value.text}</a>
+                                        <a className="nav-link font-rintix" style= {{ color: navStyle ? "white" : colorBlack}}  aria-current="page" href={value.link}>{value.text}</a>
                                     </li>
                         })}
 
                     </ul>
-                    <hr/>
+                    <hr style= {{ color: navStyle ? "white" : colorBlack}}/>
                 </div>
             </div>
         </nav>

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer';
+import Footer from '../components/Footer'
 
 import fullPicMonaci from '../img/monaci/1.jpg'
 import PicMonaci from '../img/monaci/2.jpg'
@@ -132,8 +132,8 @@ function DettagliProjects() {
               
               <div className='col-12 text-center'>
 
-                <h1 className='text-black'>{project.titolo}</h1>
-                <span className='text-black font-merriWeather'>{project.sottotitolo}</span>
+                <h1 className=''>{project.titolo}</h1>
+                <span className=' '>{project.sottotitolo}</span>
 
               </div>
 
@@ -141,22 +141,22 @@ function DettagliProjects() {
                 <img className="rounded " src={project.img} alt='...' width={'800px'} />
               </div>
 
-              <hr class="text-black"/>
+              <hr class=""/>
 
               <div className='col-6 mt-5 p-5'>
-                <h3 className='text-black text-center'>Obiettivo</h3>
-                <p className='font-merriWeather text-black'>
+                <h3 className=' text-center'>Obiettivo</h3>
+                <p className=' '>
                   “{project.obiettivo}”
                 </p>
-                <p className='text-end text-black font-merriWeather'>{project.obiettivo2}</p>
+                <p className='text-end  '>{project.obiettivo2}</p>
               </div>
 
               <div className='col-6 mt-5 mb-5'>
-                <img className="rounded " src={project.img2} alt='...' width={'600px'} />
+                <img className="rounded" src={project.img2} alt='...' width={'600px'} />
               </div>
 
               </>
-              : <h1 className='text-black'>nessun risultato trovato</h1>
+              : <h1 className=''>nessun risultato trovato</h1>
             }
 
           </div>
@@ -174,7 +174,7 @@ function DettagliProjects() {
 
         <div className='container'>
           <div className='row text-center mt-5'>
-          <h2 className="fst-italic ">Tecniche utilizzate</h2>
+          <h2 className="fst-italic text-white">Tecniche utilizzate</h2>
             <div className='col-12 mt-5 mb-5 text-center'>
 
               {
@@ -221,12 +221,12 @@ function DettagliProjects() {
               </>
             }
 
-            <hr className='text-black'/>
+            <hr className=''/>
 
             <div className='col-12 mt-5 text-center'>
-              <h3 className='font-merriWeather text-black'> Hai bisogno di un Sito Web Professionale?</h3>
-              <a type="button" className="fs-1 mt-3 btn btn-outline-danger mb-3 me-5 text-black" href="tel:+393281131848">CHIAMA</a>
-              <a type="button" className="fs-1 btn btn-outline-danger mt-3 mb-3 text-black" href="#contatti">EMAIL</a>
+              <h3> Hai bisogno di un Sito Web Professionale?</h3>
+              <a type="button" className="fs-1 mt-3 btn btn-outline-danger mb-3 me-5 font-rintix" href="tel:+393281131848">CHIAMA</a>
+              <a type="button" className="fs-1 btn btn-outline-danger mt-3 mb-3 font-rintix" href="#contatti">EMAIL</a>
             </div>
 
 

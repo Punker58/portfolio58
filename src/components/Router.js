@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import DettagliProjects from '../pages/DettagliProjects';
-import PrivacyPolicy from '../pages/PrivacyPolicy';
-import CookiePolicy from '../pages/CookiePolicy';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from '../pages/Home'
+import DettagliProjects from '../pages/DettagliProjects'
+import PrivacyPolicy from '../pages/PrivacyPolicy'
+import CookiePolicy from '../pages/CookiePolicy'
 
 function Router() {
 

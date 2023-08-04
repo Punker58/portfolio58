@@ -1,4 +1,4 @@
-import logo from '../img/icon/logo.png';
+import logo from '../img/icon/logo.png'
 
 const linkSito = [
     {"link" : "/portfolio58#home", "nome" : "Home"},
@@ -43,53 +43,53 @@ function Footer() {
                             <img src={logo} height={'100px'} alt='...'/>
                         </div>
 
-                        <div className="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 font-merriWeather">
-                            <p className='fw-bold'>Mappa del sito</p>
+                        <div className="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
+                            <p className='fw-bold text-light'>Mappa del sito</p>
 
                             {linkSito.map(function(data) {
                                     return (
-                                        <p className='m-4'><a href={data.link} className='font-merriWeather text-white-50'>{data.nome}</a></p>
+                                        <p className='m-4'><a href={data.link} className='text-white-50'>{data.nome}</a></p>
                                     )
                             })}
 
                         </div>
 
                         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                            <p className='fw-bold m-4'>Social</p>
+                            <p className='fw-bold m-4 text-light'>Social</p>
 
                             {linkSocial.map(function(data) {
                                 return (
-                                    <p className='m-4'><a href={data.link} className='font-merriWeather text-white-50'>{data.nome}</a></p>
+                                    <p className='m-4'><a href={data.link} className='text-white-50'>{data.nome}</a></p>
                                 )
                             })}
 
                         </div>
 
                         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                            <p className='fw-bold m-4'>Design</p>
+                            <p className='fw-bold m-4 text-light'>Design</p>
 
                             {linkDesign.map(function(data) {
                                 return (
-                                    <p className='m-4'><a href={data.link} className='font-merriWeather text-white-50'>{data.nome}</a></p>
+                                    <p className='m-4'><a href={data.link} className='text-white-50'>{data.nome}</a></p>
                                 )
                             })}
 
                         </div>
 
-                        <hr/>
+                        <hr className='text-white'/>
 
-                        <div className="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11 mt-1 mb-5 ">
-                            <p className='font-merriWeather'>
+                        <div className="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11 mt-1 mb-5 text-light">
+                            <p>
                                 Copyright ©2023 Francesco Castiello<br/>
-                                <a href="#" className='font-merriWeather' >Privacy Policy</a> - 
-                                <a href="#" className='font-merriWeather' >Cookie Policy</a>
+                                <a href="/privacy-policy" className='text-white-50 ' >Privacy Policy</a> - 
+                                <a href="/cookie-policy" className='text-white-50 ms-1' >Cookie Policy</a>
                             </p>
                         </div>
 
-                        <div className="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1 mb-5 pfooter">
+                        <div className="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1 mb-5 mt-3 pfooter">
                             {linkSocialFrontEnd.map(function(data) {
                                     return (
-                                        <a href={data.link}><i className={data.icon}></i></a>
+                                        <a href={data.link} className='text-light'><i className={data.icon}></i></a>
                                     )
                                 })}
                         </div>

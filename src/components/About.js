@@ -8,7 +8,7 @@ function About() {
             <div className="row ">
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <p data-aos="fade-down" data-aos-duration="1000" className="font-merriWeather">
+                    <p data-aos="fade-down" data-aos-duration="1000" >
                         <em>Ciao a tutti! Sono Francesco Castiello</em>,
                         un giovane di 26 anni con una vera passione per l'informatica,
                         il web development e il web design. <br/> <br/>
@@ -31,7 +31,7 @@ function About() {
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <p data-aos="fade-down" data-aos-duration="1000" className="font-merriWeather">
+                    <p data-aos="fade-down" data-aos-duration="1000" >
                         <em>Oltre al mondo digitale</em>, ci sono due altre grandi passioni nella mia vita: il calcio e il gaming.<br/><br/>
                         Il calcio è uno sport che mi fa battere il cuore e mi coinvolge completamente. <em>Amo seguire il mio
                         club del cuore e giocare con gli amici nel tempo libero.</em> <br/><br/>

@@ -11,16 +11,16 @@
     --second-color: #BD4856;
     --third-color: #141214;
 
-    /* COLORE TESTO*/
-    color:var(--text-color) !important;
-
-    /* FONT DEFAULT*/
-    font-family: Rintix;
-
+    /* font base*/
+    font-family: 'Merriweather', serif !important;
 }
 
-.font-merriWeather {
-    font-family: 'Merriweather', serif !important;
+h1, h2, h3, h4, h5 {
+    font-family: RINTIX !important;
+}
+
+.font-rintix {
+    font-family: RINTIX !important;
 }
 
 /* SEZIONI */
@@ -91,6 +91,7 @@
 .social a{
     display: block;
     margin-top: 2vh !important;
+    color: var(--text-color);
 }
 
 .social>a>svg {
@@ -100,6 +101,7 @@
 
 .social>a>svg:hover {
     transform: scale(1.2);
+    color: var(--text-color);
 }
 
 /** SCROLL DOWN **/
@@ -154,6 +156,20 @@
     top: 32px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
+}
+
+/* COOKIE DISCLAIMER */
+.cookie-disclaimer {
+    z-index: 10;
+    position: fixed;
+    bottom: 50px;
+    width: 35%;
+    right: 20px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 10, 0.5);
 }
 
 @-webkit-keyframes sdb07 {
@@ -453,6 +469,14 @@ figure>img:hover {
     }
 }
 
+
+/* PRIVACY POLICY / COOKIE POLICY*/
+
+.p58 {
+    text-transform: lowercase !important;
+    font-family: 'Merriweather', serif !important;
+}
+
 /* CSS */
 .sjs {
     width: 70%;
@@ -483,6 +507,55 @@ figure>img:hover {
     }
 }
 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 992px) {
+
+    .cookie-disclaimer {
+        width: 35% !important;
+    }
+
+}
+
+/* custom*/
+@media only screen and (max-width: 991px) {
+
+    .navbar-nav {
+        display:none !important;
+    }
+
+    .cookie-disclaimer {
+        width: 35%  !important;
+    }
+
+}
+
+
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 768px) {
+
+    .navbar-nav {
+        display:none !important;
+    }
+
+    .cookie-disclaimer {
+        width: 50% !important ;
+    }
+
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (max-width: 600px) {
+
+    .social, .navbar-nav {
+        display:none !important;
+    }
+
+    .cookie-disclaimer {
+        width: 100% !important ;
+    }
+
+}
+
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
 
@@ -499,36 +572,11 @@ figure>img:hover {
         margin-top: 8rem !important;
     }
 
-}
-
-/* Small screen devices (600px and above) */
-@media only screen and (max-width: 600px) {
-
-    .social, .navbar-nav {
-        display:none !important;
+    .cookie-disclaimer {
+        width: 100% !important ;
+        right: initial;
+        left: initial;
+        bottom: 0 !important;
     }
-
-}
- 
-/* Medium screen devices (768px and above) */
-@media only screen and (max-width: 768px) {
-
-    .navbar-nav {
-        display:none !important;
-    }
-
-}
- 
-/* Big screen devices (889px and above) */
-@media only screen and (max-width: 912px) {
-
-    .navbar-nav {
-        display:none !important;
-    }
-}
-
-/* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
-
 
 }

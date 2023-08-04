@@ -17,14 +17,14 @@ function Contatti() {
                 <label for="floatingPassword">Email</label>
             </div>
 
-            <p className="text-black font-merriWeather mt-3">Parlami del tuo progetto in modo dettagliato, per esempio le funzionalità chiave.</p>
+            <p className="text-black mt-3">Parlami del tuo progetto in modo dettagliato, per esempio le funzionalità chiave.</p>
             <div class="form-floating">
                 <textarea className="form-control border border-dark"  id="floatingTextarea2" style={{ height: '100px'}}></textarea>
             </div>
 
             <div class="form-check mt-3">
                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                <label className="form-check-label text-black font-merriWeather " for="flexCheckDefault">
+                <label className="form-check-label text-black" for="flexCheckDefault">
                     Acconsento al trattamento dei miei dati personali al fine di ricevere
                     una risposta al mio messaggio, come indicato nella Privacy Policy. *
                 </label>

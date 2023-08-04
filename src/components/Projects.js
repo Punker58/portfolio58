@@ -1,10 +1,10 @@
-import pmonaci from '../img/projects/monaci.png';
-import pmagliozzi from '../img/projects/magliozzi_group.png';
-import pfreestyle from '../img/projects/freestyle.png';
-import pdifferent from '../img/projects/wearedifferent.png';
-import ppsswdgen from '../img/projects/password_gen_python.png';
-import pcaffe from '../img/projects/prepare_caffe.png';
-import ppfivem from '../img/projects/fivem.png';
+import pmonaci from '../img/projects/monaci.png'
+import pmagliozzi from '../img/projects/magliozzi_group.png'
+import pfreestyle from '../img/projects/freestyle.png'
+import pdifferent from '../img/projects/wearedifferent.png'
+import ppsswdgen from '../img/projects/password_gen_python.png'
+import pcaffe from '../img/projects/prepare_caffe.png'
+import ppfivem from '../img/projects/fivem.png'
 
 //array progetti
 let elements = [

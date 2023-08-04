@@ -1,16 +1,18 @@
-import Navbar from '../components/Navbar';
-import Slogan from '../components/Slogan';
-import Social from '../components/Social';
-import Lavoro from '../components/lavoro';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import About from '../components/About';
-import Contatti from '../components/Contatti';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar'
+import Slogan from '../components/Slogan'
+import Social from '../components/Social'
+import Lavoro from '../components/lavoro'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import About from '../components/About'
+import Contatti from '../components/Contatti'
+import Footer from '../components/Footer'
+import CookieDisclaimer from '../components/CookieDisclaimer'
 
 // AOS ANIMATION
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 AOS.init({
   once:true
 });
@@ -22,6 +24,8 @@ function Home() {
         <section id='home' className='home'>
           <div className='container'>
             <div className='row'>
+
+              <CookieDisclaimer/>
 
               <div className='col-12'>
                 <Navbar/>
@@ -36,7 +40,7 @@ function Home() {
               </div>
 
               <div className='scroll col-12'>
-                <a className='font-merriWeather' href="#lavoro"><span></span><span></span><span></span></a>
+                <a className='' href="#lavoro"><span></span><span></span><span></span></a>
               </div>
 
             </div>
@@ -109,7 +113,7 @@ function Home() {
           <div className='container text-center '>
               <h1 className="fst-italic">contattami</h1>
               <div className='row'>
-                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded font-merriWeather shadow form58'>
+                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded  shadow form58'>
                     <Contatti/>
                   </div>
                 </div>
