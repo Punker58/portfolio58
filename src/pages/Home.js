@@ -111,13 +111,13 @@ function Home() {
 
         <section id="contatti" className='contatti '>
           <div className='container text-center '>
-              <h1 className="fst-italic">contattami</h1>
-              <div className='row'>
-                <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded  shadow form58'>
-                    <Contatti/>
-                  </div>
-                </div>
+            <h1 className="fst-italic">contattami</h1>
+            <div className='row'>
+              <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded  shadow form58'>
+                <Contatti/>
               </div>
+            </div>
+          </div>
         </section>
 
         <Footer/>      

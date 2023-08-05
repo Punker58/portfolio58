@@ -1,8 +1,12 @@
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
+// componenti
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Contatti from '../components/Contatti'
 
+// immagini
 import fullPicMonaci from '../img/monaci/1.jpg'
 import PicMonaci from '../img/monaci/2.jpg'
 import Pic2Monaci from '../img/monaci/3.jpg'
@@ -29,11 +33,15 @@ import jspic from '../img/js.png';
 import bt5 from '../img/bootstrap.png';
 import phppic from '../img/php.png';
 import mysqlpic from '../img/mysql.png';
+// end immagini
 
 function DettagliProjects() {
+
+  // variabili default per parametri e progetto
   const params = useParams()
   let project = null
 
+  // parametri per i vari progetti
   if(params.name === 'monaci') {
     project =  {
       titolo: 'MONACIDOMENICO.LAB',
@@ -101,7 +109,13 @@ function DettagliProjects() {
     }
   }
 
-    
+  // funzione visualizza modulo contatti
+  const [showContatti, setShowContatti] = useState(false);
+
+  const handleShow = () => {
+      setShowContatti((prevState) => !prevState);
+  }
+
   return (
     <>
 
@@ -226,9 +240,20 @@ function DettagliProjects() {
             <div className='col-12 mt-5 text-center'>
               <h3> Hai bisogno di un Sito Web Professionale?</h3>
               <a type="button" className="fs-1 mt-3 btn btn-outline-danger mb-3 me-5 font-rintix" href="tel:+393281131848">CHIAMA</a>
-              <a type="button" className="fs-1 btn btn-outline-danger mt-3 mb-3 font-rintix" href="#contatti">EMAIL</a>
-            </div>
+              <a type="button" className="fs-1 btn btn-outline-danger mt-3 mb-3 font-rintix" href="#contatti" onClick={handleShow}>EMAIL</a>
+              
+              { /* Animazione sul click del bottone */
+                showContatti && 
+                <div className='container text-center '>
+                    <div className='row'>
+                      <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded shadow form58'>
+                        <Contatti/>
+                      </div>
+                    </div>
+                </div>
+              }
 
+            </div>
 
           </div>
         </div>
