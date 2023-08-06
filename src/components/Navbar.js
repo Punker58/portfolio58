@@ -3,11 +3,11 @@ import { useMatch } from "react-router-dom"
 
 const lista = [
     {link: '/portfolio58', text:'Home'},
-    {link: '#lavoro', text:'Lavoro'},
-    {link: '#progetti', text:'Progetti'},
-    {link: '#skills', text:'Skills'},
-    {link: '#chisono', text:'Chi sono'},
-    {link: '#contatti', text:'Contatti'}
+    {link: '/portfolio58#lavoro', text:'Lavoro'},
+    {link: '/portfolio58#progetti', text:'Progetti'},
+    {link: '/portfolio58#skills', text:'Skills'},
+    {link: '/portfolio58#chisono', text:'Chi sono'},
+    {link: '/portfolio58#contatti', text:'Contatti'}
 ];
 
 function Navbar() {

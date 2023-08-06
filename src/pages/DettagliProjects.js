@@ -27,12 +27,12 @@ import PicWeare from '../img/wearedifferent/2.jpg'
 import Pic2Weare from '../img/wearedifferent/3.jpg'
 import Pic3Weare from '../img/wearedifferent/4.jpg'
 
-import html5 from '../img/html.png';
-import css from '../img/css.png';
-import jspic from '../img/js.png'; 
-import bt5 from '../img/bootstrap.png';
-import phppic from '../img/php.png';
-import mysqlpic from '../img/mysql.png';
+import html5 from '../img/skills/html.svg';
+import css from '../img/skills/css.svg';
+import jspic from '../img/skills/js.svg'; 
+import bt5 from '../img/skills/bootstrap.svg';
+import phppic from '../img/skills/php.svg';
+import mysqlpic from '../img/skills/mysql.svg';
 // end immagini
 
 function DettagliProjects() {
@@ -56,7 +56,8 @@ function DettagliProjects() {
       tec2: css,
       tec3: jspic,
       tec4: phppic,
-      tec5: bt5
+      tec5: bt5,
+      tec6: mysqlpic
 
     }
   }else if(params.name === 'magliozzi') {
@@ -77,7 +78,7 @@ function DettagliProjects() {
     }
   }else if (params.name === 'freestyle') {
     project =  {
-      sottotitolo: 'Negozio di abbigliamento, presso Nichelino (TO)',
+      sottotitolo: 'Negozio di abbigliamento, presso Nichelino (TO).',
       titolo: 'FREESTYLE CONCEPT STORE',
       obiettivo: 'Ho bisogno di far conoscere il mio brand per tutta Italia.',
       obiettivo2: 'freestyle concept store - 2022',
@@ -89,11 +90,12 @@ function DettagliProjects() {
       tec2: css,
       tec3: jspic,
       tec4: phppic,
-      tec5: bt5
+      tec5: bt5,
+      tec6: mysqlpic
     }
   }else if (params.name === 'wearedifferent') {
     project =  {
-      sottotitolo: 'Negozio di abbigliamento, presso Volla (NA)',
+      sottotitolo: 'Negozio di abbigliamento, presso Volla (NA).',
       titolo: 'WEAREDIFFERENT - BOUTIQUE',
       obiettivo: 'Ho bisogno di far conoscere il mio brand.',
       obiettivo2: 'wearedifferent - 2021',
@@ -105,7 +107,8 @@ function DettagliProjects() {
       tec2: css,
       tec3: jspic,
       tec4: phppic,
-      tec5: bt5
+      tec5: bt5,
+      tec6: mysqlpic
     }
   }
 
@@ -152,7 +155,7 @@ function DettagliProjects() {
               </div>
 
               <div className='col-12 mt-5 mb-5 text-center'>
-                <img className="rounded img-fluid" src={project.img} alt='...' width={'800px'} />
+                <img className="rounded shadow img-fluid" src={project.img} alt='...' width={'800px'} />
               </div>
 
               <hr/>
@@ -162,11 +165,11 @@ function DettagliProjects() {
                 <p>
                   “{project.obiettivo}”
                 </p>
-                <p className='text-end  '>{project.obiettivo2}</p>
+                <p className='text-end'>{project.obiettivo2}</p>
               </div>
 
               <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
-                <img className="rounded img-fluid" src={project.img2} alt='...' width={'600px'} />
+                <img className="rounded shadow img-fluid" src={project.img2} alt='...' width={'600px'} />
               </div>
 
               </>
@@ -193,15 +196,20 @@ function DettagliProjects() {
 
               {
                 <>
-                  <img src={project.tec} width={'100px'} alt='...'/>
-                  <img src={project.tec2} width={'100px'} alt='...'/>
-                  <img src={project.tec3} width={'100px'} alt='...'/>
-                  <img src={project.tec4} width={'100px'} alt='...'/>
-                  <img src={project.tec5} width={'100px'} alt='...'/>
+                  <img className="m-2" src={project.tec} width={'100px'} alt='...'/>
+                  <img className="m-2" src={project.tec2} width={'100px'} alt='...'/>
+                  <img className="m-2" src={project.tec3} width={'100px'} alt='...'/>
+                  <img className="m-2" src={project.tec4} width={'100px'} alt='...'/>
+                  <img className="m-2" src={project.tec5} width={'100px'} alt='...'/>
                 </>
               }
 
-
+              { project.tec6 != null ?
+                <img className="m-2" src={project.tec6} width={'100px'} alt='...'/>
+                : ''
+              }
+                  
+              
             </div>
           </div>
         </div>
@@ -225,11 +233,11 @@ function DettagliProjects() {
               <>
 
               <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
-                <img className="rounded img-fluid" src={project.img3} alt='...' width={'600px'} />
+                <img className="rounded img-fluid shadow" src={project.img3} alt='...' />
               </div>
 
               <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
-                <img className="rounded img-fluid" src={project.img4} alt='...'  />
+                <img className="rounded img-fluid shadow" src={project.img4} alt='...'  />
               </div>
 
               </>
