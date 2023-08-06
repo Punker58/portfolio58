@@ -146,27 +146,27 @@ function DettagliProjects() {
               
               <div className='col-12 text-center'>
 
-                <h1 className=''>{project.titolo}</h1>
-                <span className=' '>{project.sottotitolo}</span>
+                <h1>{project.titolo}</h1>
+                <span>{project.sottotitolo}</span>
 
               </div>
 
               <div className='col-12 mt-5 mb-5 text-center'>
-                <img className="rounded " src={project.img} alt='...' width={'800px'} />
+                <img className="rounded img-fluid" src={project.img} alt='...' width={'800px'} />
               </div>
 
-              <hr class=""/>
+              <hr/>
 
-              <div className='col-6 mt-5 p-5'>
-                <h3 className=' text-center'>Obiettivo</h3>
-                <p className=' '>
+              <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 p-5'>
+                <h3 className='text-center'>Obiettivo</h3>
+                <p>
                   “{project.obiettivo}”
                 </p>
                 <p className='text-end  '>{project.obiettivo2}</p>
               </div>
 
-              <div className='col-6 mt-5 mb-5'>
-                <img className="rounded" src={project.img2} alt='...' width={'600px'} />
+              <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
+                <img className="rounded img-fluid" src={project.img2} alt='...' width={'600px'} />
               </div>
 
               </>
@@ -224,12 +224,12 @@ function DettagliProjects() {
             {
               <>
 
-              <div className='col-6 mt-5 mb-5'>
-                <img className="rounded " src={project.img3} alt='...' width={'600px'} />
+              <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
+                <img className="rounded img-fluid" src={project.img3} alt='...' width={'600px'} />
               </div>
 
-              <div className='col-6 mt-5 mb-5'>
-                <img className="rounded " src={project.img4} alt='...' width={'600px'} />
+              <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5'>
+                <img className="rounded img-fluid" src={project.img4} alt='...'  />
               </div>
 
               </>

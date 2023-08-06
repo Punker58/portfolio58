@@ -28,8 +28,6 @@ function Contatti() {
         setMessage("");
     }, 2000);
 
-
-
     };
 
   // Configurazione delle transizioni con useTransition

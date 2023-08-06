@@ -6,7 +6,7 @@ function Lavoro() {
 
 
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8  mt-5 mb-5 lavoro">
-                <h1 className="text-black">CONCETTI FONDAMENTALI</h1>
+                <h1 className="text-black fst-italic">CONCETTI FONDAMENTALI</h1>
                 <hr className="text-black"/>
 
                     <h5> Design Unico e Coinvolgente:</h5>
@@ -37,8 +37,8 @@ function Lavoro() {
 
             </div>
 
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-5 mb-5 ">
-                <img src={logo} style={{width: 400}} alt='foto'/>
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-5 mb-5 text-center">
+                <img src={logo} className='logolavoro' alt='foto'/>
             </div>
 
         </>

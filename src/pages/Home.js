@@ -31,7 +31,7 @@ function Home() {
                 <Navbar/>
               </div>
 
-              <div className='col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5'>
+              <div className='col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-5 col-xxl-5 '>
                 <Slogan/>
               </div>
 
@@ -62,7 +62,7 @@ function Home() {
         <section id="progetti" className='projects'>
           <div className='container'>
             <div className='row'>
-            <h1 className="fst-italic">progetti</h1>
+            <h1 className='text-black text-end fst-italic mt-2'>progetti</h1>
               <div className='col-12 mt-5'>
                 <Projects/>
               </div>
@@ -81,7 +81,7 @@ function Home() {
 
           <div className='container'>
             <div className='row'>
-            <h1 className="fst-italic">Skills</h1>
+            <h1 className="fst-italic text-white mt-3">Skills</h1>
               <div className='col-12 mt-5'>
                 <Skills/>
               </div>
@@ -99,7 +99,7 @@ function Home() {
         <section id="chisono" className='about'>
           <div className='container'>
             <div className='row'>
-            <h1 className="fst-italic">chi sono</h1>
+            <h1 className="fst-italic text-end mt-3">chi sono</h1>
               <div className='col-12 mt-5'>
                 <About/>
               </div>
@@ -111,7 +111,7 @@ function Home() {
 
         <section id="contatti" className='contatti '>
           <div className='container text-center '>
-            <h1 className="fst-italic">contattami</h1>
+            <h1 className="fst-italic mt-3 mb-3">contattami</h1>
             <div className='row'>
               <div className='col-6 mx-auto col-10 col-md-8 col-lg-6 p-5 rounded  shadow form58'>
                 <Contatti/>
