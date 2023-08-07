@@ -11,7 +11,7 @@ function Contatti() {
     const form = useRef()
 
     const sendEmail = (e) => {      
-        e.preventDefault();
+      e.preventDefault();
 
         // logica email.js
         emailjs.sendForm('service_key', 'template_key', form.current, 'public_key')
