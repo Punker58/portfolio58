@@ -11,22 +11,23 @@ function Contatti() {
     const form = useRef()
 
     const sendEmail = (e) => {      
-      e.preventDefault();
+        e.preventDefault();
 
-    emailjs.sendForm('service_key', 'template_key', form.current, 'public_key')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-    });
+        // logica email.js
+        emailjs.sendForm('service_key', 'template_key', form.current, 'public_key')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+        });
 
-    // Simula l'invio con un ritardo di 2 secondi
-    setTimeout(() => {
-        setSubmitted(true);
-        setName("");
-        setEmail("");
-        setMessage("");
-    }, 2000);
+        // Simula l'invio con un ritardo di 2 secondi
+        setTimeout(() => {
+            setSubmitted(true);
+            setName("");
+            setEmail("");
+            setMessage("");
+        }, 2000);
 
     };
 
@@ -52,7 +53,7 @@ function Contatti() {
 
                     {/* form */}
                     <form ref={form} onSubmit={sendEmail}>
-                        <div class="form-floating mb-3 fst-italic"> 
+                        <div className="form-floating mb-3 fst-italic"> 
                             <input 
                                 type="text"
                                 className="form-control border border-dark"
@@ -62,10 +63,10 @@ function Contatti() {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
-                            <label for="floatingInput" >Nome - Cognome</label>
+                            <label htmlFor="floatingInput" >Nome - Cognome</label>
                         </div>
 
-                        <div class="form-floating fst-italic">
+                        <div className="form-floating fst-italic">
                             <input 
                                 type="email"
                                 className="form-control border border-dark"
@@ -75,14 +76,15 @@ function Contatti() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            <label for="floatingPassword">Email</label>
+                            <label htmlFor="floatingPassword">Email</label>
                         </div> 
 
                         <p className="text-black fst-italic mt-3 ">Parlami del tuo progetto in modo dettagliato, per esempio le funzionalità chiave.</p>
-                        <div class="form-floating">
+                        <div className="form-floating">
                             <textarea
                                 className="form-control border border-dark"
                                 id="floatingTextarea2"
+                                placeholder="Messaggio:"
                                 style={{ height: '100px'}}
                                 name="message"
                                 value={message}
@@ -90,9 +92,9 @@ function Contatti() {
                             ></textarea>
                         </div>
 
-                        <div class="form-check mt-3">
+                        <div className="form-check mt-3">
                             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label className="form-check-label text-black fst-italic" for="flexCheckDefault">
+                            <label className="form-check-label text-black fst-italic" htmlFor="flexCheckDefault">
                                 Acconsento al trattamento dei miei dati personali al fine di ricevere
                                 una risposta al mio messaggio, come indicato nella <a href='/privacy-policy' className='text-black'>Privacy Policy</a>. *
                             </label>
