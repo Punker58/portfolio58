@@ -1,4 +1,4 @@
-import logo from '../img/icon/logo.png'
+import logo from '../img/icon/logo.webp'
 import { useMatch } from "react-router-dom"
 
 const lista = [
@@ -20,17 +20,16 @@ function Navbar() {
 
     return(
         <>
-        
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <a href="/portfolio58" className="navbar-brand">
-                    <img src={logo} alt="..."/>
+                <a href="/portfolio58" className=" navbar-brand">
+                    <img src={logo} alt="logo sito web Francesco Castiello" title="Logo rappresentante il marchio Francesco Castiello - Web Developer e Designer"/>
                 </a>
-                <div className="" id="navbarNav">
+                <div id="navbarNav">
                     <ul className="navbar-nav">
 
-                        {lista.map(function(value){
-                            return <li className="nav-item">
+                        {lista.map(function(value, index){
+                            return <li key={index} className="nav-item">
                                         <a className="nav-link font-rintix" style= {{ color: navStyle ? "white" : colorBlack}}  aria-current="page" href={value.link}>{value.text}</a>
                                     </li>
                         })}

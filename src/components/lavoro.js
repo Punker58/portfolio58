@@ -1,11 +1,11 @@
-import logo from '../img/icon/logo.png'
+import logo from '../img/icon/logo.webp'
 
 function Lavoro() {
     return(
         <>
 
 
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8  mt-5 mb-5 lavoro">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8  mt-5 mb-5 lavoro" data-aos="fade" data-aos-duration="3000">
                 <h1 className="text-black fst-italic">CONCETTI FONDAMENTALI</h1>
                 <hr className="text-black"/>
 
@@ -37,8 +37,8 @@ function Lavoro() {
 
             </div>
 
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-5 mb-5 text-center">
-                <img src={logo} className='logolavoro' alt='foto'/>
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-5 mb-5 text-center" data-aos="fade" data-aos-duration="1000">
+                <img src={logo} className='logolavoro' alt='logo del sito web Francesco Castiello' title="Logo rappresentante il marchio Francesco Castiello - Web Developer e Designer"/>
             </div>
 
         </>
