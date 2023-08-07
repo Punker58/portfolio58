@@ -45,6 +45,14 @@ h1, h2, h3, h4, h5 {
     margin-top: 1.5rem;
 }
 
+.navbar-toggler {
+    border: 1px solid var(--text-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
 /** SLOGAN **/
 .slogan {
     margin-top: 20%;
@@ -210,7 +218,7 @@ figure>img {
 }
 
 /** SEZIONE SKILLS **/
-.skills2>li>h3>img {
+.skills2>ul>li>h3>img {
     width:3.2rem;
     height:auto;
 }
@@ -224,7 +232,7 @@ figure>img {
     background: var(--second-color) !important;
     display: block;
     height: 8px;
-    width:350px;
+    max-width:350px;
     border: 1px solid var(--main-color);
     border-radius: 3px;
     overflow: hidden;
@@ -367,10 +375,10 @@ footer p a:hover {
       var(--second-color) 100%
     );
     background-size: auto auto;
-    background-clip: border-box;
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: border-box;
     display: inline-block;
 }
 
@@ -463,7 +471,8 @@ figure>img:hover {
 @media only screen and (max-width: 1024px) {
 
     .home {
-        height:800px;
+        height:100%;
+        padding-bottom: 50px !important;
     }
 
     .scroll {
@@ -502,14 +511,15 @@ figure>img:hover {
 @media only screen and (max-width: 600px) {
 
     .home {
-        height:650px;
+        height:100%;
+        padding-bottom: 20px !important;
     }
 
     .scroll {
         display: none;
     }
 
-    .social, .navbar-nav {
+    .social {
         display:none !important;
     }
 
@@ -523,14 +533,15 @@ figure>img:hover {
 @media only screen and (max-width: 595px) {
 
     .home {
-        height:650px;
+        height:100%;
+        padding-bottom: 50px !important;
     }
 
     .scroll {
         display: none;
     }
 
-    .social, .navbar-nav {
+    .social{
         display: none !important;
     }
 

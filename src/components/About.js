@@ -1,13 +1,18 @@
-import img1 from '../img/about/1.png'
-import img3 from '../img/about/3.png'
+import img1 from '../img/about/1.webp'
+import img3 from '../img/about/3.webp'
 
 function About() {
+
+    // testo alternativo per le immagini sottostanti
+    const altImg = 'immagine che ritrae pc con ide per programmare'
+    const altImg2 = 'immagine che ritrae kvaratshelia, giocatore del SSC Napoli'
+
     return(
         <>
 
             <div className="row ">
 
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" data-aos="fade-down" data-aos-duration="1000">
                     <p data-aos="fade-down" data-aos-duration="1000" >
                         <em>Ciao a tutti! Sono Francesco Castiello</em>,
                         un giovane di 26 anni con una vera passione per l'informatica,
@@ -23,15 +28,15 @@ function About() {
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <img className="float-end" src={img1} alt='...'/>
+                    <img className="float-end" src={img1} alt={altImg} />
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <img className="float-end" src={img3} alt='...'/>
+                    <img className="float-end" src={img3} alt={altImg2}/>
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <p data-aos="fade-down" data-aos-duration="1000" >
+                    <p data-aos="fade-down" data-aos-duration="1000">
                         <em>Oltre al mondo digitale</em>, ci sono due altre grandi passioni nella mia vita: il calcio e il gaming.<br/><br/>
                         Il calcio è uno sport che mi fa battere il cuore e mi coinvolge completamente. <em>Amo seguire il mio
                         club del cuore e giocare con gli amici nel tempo libero.</em> <br/><br/>

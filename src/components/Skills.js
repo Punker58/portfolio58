@@ -22,45 +22,46 @@ function Skills() {
 
     //array progetti
     let elements = [
-        {img: html5, class:'shtml'},
-        {img: css, class:'shtml'},
-        {img: jspic, class:'sjs'},
-        {img: jquery, class:'sjs'},
-        {img: gitpic, class:'shtml'},
-        {img: ps, class:'sreactpic'}, 
-        {img: tailpic, class:'shtml'},
-        {img: bulmapic, class:'shtml'},
-        {img: npmpic, class:'shtml'},
-        {img: bt5, class:'shtml'},
-        {img: reactpic, class:'sjs'},
-        {img: flaskpic, class:'sreactpic'},   
-        {img: laravelpic, class:'shtml'},
-        {img: phppic, class:'shtml'},
-        {img: pythonpic, class:'shtml'},
-        {img: mysqlpic, class:'shtml'},
-        {img: luapic, class:'shtml'},
-        {img: electronpic, class:'sreactpic'},
-        {img: mongopic, class:'shtml'}
+        {img: html5, class: 'shtml', alt: 'logo html 5'},
+        {img: css,  class: 'shtml', alt: 'logo css 3'},
+        {img: jspic, class: 'sjs', alt: 'logo javacript'},
+        {img: jquery, class: 'sjs', alt: 'logo jquery'},
+        {img: gitpic, class: 'shtml', alt: 'logo git'},
+        {img: ps, class: 'sreactpic', alt: 'logo photoshop 2023'}, 
+        {img: tailpic, class: 'shtml', alt: 'logo tailwind css'},
+        {img: bulmapic, class: 'shtml', alt: 'logo bulma css'},
+        {img: npmpic, class: 'shtml', alt: 'logo npm'},
+        {img: bt5, class: 'shtml', alt: 'logo bootstrap 5'},
+        {img: reactpic, class: 'sjs', alt: 'logo react js'},
+        {img: flaskpic, class: 'sreactpic', alt: 'logo flask'},   
+        {img: laravelpic, class: 'shtml', alt: 'logo laravel'},
+        {img: phppic, class: 'shtml', alt: 'logo php'},
+        {img: pythonpic, class: 'shtml', alt: 'logo python'},
+        {img: mysqlpic, class: 'shtml', alt: 'logo mysql'},
+        {img: luapic, class: 'shtml', alt: 'logo lua'},
+        {img: electronpic, class: 'sreactpic', alt: 'logo electron.js'},
+        {img: mongopic, class: 'shtml', alt: 'logo mongodb'}
     ];
 
     return (
         <>
 
-            <div className="row mb-5">
+            <div className="row mb-5" data-aos="fade" data-aos-duration="3000">
 
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
                     <div className="skills2">
 
-                        {elements.map(function(value, index){
+                        <ul>
+                            {elements.map(function(value, index){
 
-                            return (index <= 5)?
-                                    <li>
-                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
-                                    </li>
-                                :null
+                                return (index <= 5)?
+                                        <li key={index}>
+                                            <h3><img src={value.img} alt={value.alt} /></h3><span className="bar"><span className={value.class}></span></span>
+                                        </li>
+                                    :null
 
-                        })}
-
+                            })}
+                        </ul>
 
                     </div>
                 </div>   
@@ -68,16 +69,17 @@ function Skills() {
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
                     <div className="skills2">
 
-                        {elements.map(function(value, index){
+                        <ul>
+                            {elements.map(function(value, index){
 
-                            return (index > 5 && index <= 12)?
-                                    <li>
-                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
-                                    </li>
-                                :null
+                                return (index > 5 && index <= 12)?
+                                        <li key={index}>
+                                            <h3><img src={value.img} alt={value.alt} /></h3><span className="bar"><span className={value.class}></span></span>
+                                        </li>
+                                    :null
 
-                        })}
-
+                            })}
+                        </ul>
 
                     </div>
                 </div>  
@@ -85,16 +87,17 @@ function Skills() {
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-5">
                     <div className="skills2">
 
-                        {elements.map(function(value, index){
+                        <ul>
+                            {elements.map(function(value, index){
 
-                            return (index > 12 && index < 20)?
-                                    <li>
-                                        <h3><img src={value.img} alt='...' /></h3><span className="bar"><span className={value.class}></span></span>
-                                    </li>
-                                :null
+                                return (index > 12 && index < 20)?
+                                        <li key={index}>
+                                            <h3><img src={value.img} alt={value.alt} /></h3><span className="bar"><span className={value.class}></span></span>
+                                        </li>
+                                    :null
 
-                        })}
-
+                            })}
+                        </ul>
 
                     </div>
                 </div>                
