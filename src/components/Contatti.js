@@ -14,7 +14,7 @@ function Contatti() {
       e.preventDefault();
 
         // logica email.js
-        emailjs.sendForm('service_key', 'template_key', form.current, 'public_key')
+        emailjs.sendForm('service_uk7neug', 'template_4eqx3mv', form.current, 'OiTBZN7Ws5-WUv66S')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

@@ -10,7 +10,7 @@ function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/portfolio58" element={<Home/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
                 <Route path="/dettagli-progetto/:name" element={<DettagliProjects/>}></Route>
                 <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
                 <Route path="/cookie-policy" element={<CookiePolicy/>}></Route>
